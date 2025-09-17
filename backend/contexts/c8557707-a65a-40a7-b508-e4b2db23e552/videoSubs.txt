@@ -1,0 +1,1146 @@
+These are Video subtiles for your context:
+
+
+We try our best to protect our systems and
+networks, but it's pretty likely that some
+sort of incident will happen. This could be anything from
+a full system compromise and data theft to someone
+accidentally leaking a memo. Regardless of the nature of the incident, proper incident handling is important to
+understanding what exactly happened and how it happened and
+how to avoid it from happening again. The very first step of handling an
+incident is detected in the first place. Hopefully, our intrusion detection systems
+caught the telltale signs of an ongoing attack and alerted us to the threat, incidents can be brought to your
+attention in other ways too. An employee may have noticed
+something suspicious and reported it to the security team for investigation or maybe they leaked
+information that ended up in the news. However you found out about the incident,
+the next step is to analyze it and determine the effects and scope of damage. Was it a data leak or
+information disclosure? If so, what information got out? How bad is it, where systems compromised? What systems and what level of
+access did they manage to get? Is it a malware infection? What systems were infected? Some attacks are really obvious with
+very clear signs of an intrusion, like a defaced web page or unusual processes
+consuming all resources in the system. Others may be way more subtle and
+almost impossible to detect. Like a small change to a single
+system configuration file. This is why having good
+monitoring in place is so important along with
+understanding your baseline. Once you figure out what normal
+traffic looks like on your network and what services you expect to see,
+outliers will be easier to detect. This is important because every false lead
+that the incident response team has to investigate means time and
+resources wasted. This has the potential to allow real
+intrusions to go undetected and uninvestigated longer. During detection and scoping correlating
+data from different systems can reveal a much bigger picture of what's happened. It might show how
+an intruder gained access. For example, you could see a connection event logged by
+the firewall from a suspicious IP address. Searching for other events related to this
+IP address may reveal login attempts in the authentication logs for a system. This would provide insight into where
+the attacker is coming from and what they attempted to do on the network. The authentication logs would
+also indicate whether or not they were able to
+successfully log into an account. If so, that's let you know
+what account is compromised. Once the scope of the incident is
+determined, the next step is containment. You need to contain the breach to prevent
+further damage for system compromises and malware infection. This is a pretty time sensitive step. You don't want the malware or attacker
+to use one compromised machine to pivot to other machines inside your network. This could broaden the incident scope and
+cause even more damage. Containment strategies will vary
+depending on the nature of the incident. If an account was compromised,
+change the password immediately. If the owner is unable to
+change the password right away, then lock the account, also revoke
+any long live authentication tokens. Since the attacker may
+have one of those two. If it's a malware infection, can our
+anti malware software quarantine or remove the infection. If not the infected machine needs to
+be removed from the network as soon as possible to prevent lateral movement
+around the network, to do this, you can adjust network based firewall rules to
+effectively quarantine the machine. You can also move the machine
+to a separate V Land used for security quarantining purposes. This would be a V-land with
+strict restrictions and filtering applied to prevent further
+infection of other systems and networks. It's important during this
+phase that efforts are made to avoid the destruction of any logs or
+forensic evidence. Attackers will usually try to cover
+their tracks by modifying logs and deleting files, especially when
+they suspect they've been caught. They'll take measures to make sure they
+keep their access to compromised systems. This could involve installing a backdoor
+or some kind of remote access malware. Another step to watch out for is creating
+a new user account that they can use to authenticate with in the future with
+effective logging, configurations and systems in place. These activities would
+show up in audit logs. So this type of access should be detected
+during an incident investigation. Then actions can be
+taken to remove access. I hope I'm not scaring you
+with all these scenarios, but it's better to be safe than sorry. Another part of incident analysis
+is determining severity, impact and recovery ability of the incident,. Severity includes factors like what and
+how many systems were compromised and how the breach affects business functions. An incident that's compromised a bunch
+of machines in the network would be more severe than one where a single
+web server was hacked. For example, you can imagine that
+the effort required to fix a large scale compromise would negatively affect
+the ability to do normal work. So the impact of an incident is also
+an important issue to consider if the organization only had one web
+server and it was compromised, it might be considered a much
+higher severity breach. It would probably have a direct externally
+visible impact on the business. Data exfiltration is the unauthorized
+transfer of data from a computer. It's also a very important concern
+when a security incident happens, hackers may try to steal data for
+a number of reasons. They may want to steal account
+information to provide access later. They may target business data to publish
+online to cause financial loss or damage to the organization's reputation. In some cases, the attacker may
+just want to cause damage and destruction which might involve
+the leading or corrupting data. What actions have been taken will affect
+the recovery ability of the incident. The recovery ability
+is how complicated and time consuming the recovery
+effort will be. An incident that can be recovered with
+a simple restoration from backup by following documented procedures would
+be considered easily recovered from. But an incident where an attacker deleted
+large amounts of customer information and wrecked havoc across lots of critical
+infrastructure systems would be way more difficult to recover from. It might not be possible
+to recover from it at all. In some cases, depending on backup
+systems and configurations, some data may be lost forever and
+can't be restored. Backups won't contain any changes or new data that were made
+after the last backup run.We try our best to protect our systems and
+networks, but it's pretty likely that some
+sort of incident will happen. This could be anything from
+a full system compromise and data theft to someone
+accidentally leaking a memo. Regardless of the nature of the incident, proper incident handling is important to
+understanding what exactly happened and how it happened and
+how to avoid it from happening again. The very first step of handling an
+incident is detected in the first place. Hopefully, our intrusion detection systems
+caught the telltale signs of an ongoing attack and alerted us to the threat, incidents can be brought to your
+attention in other ways too. An employee may have noticed
+something suspicious and reported it to the security team for investigation or maybe they leaked
+information that ended up in the news. However you found out about the incident,
+the next step is to analyze it and determine the effects and scope of damage. Was it a data leak or
+information disclosure? If so, what information got out? How bad is it, where systems compromised? What systems and what level of
+access did they manage to get? Is it a malware infection? What systems were infected? Some attacks are really obvious with
+very clear signs of an intrusion, like a defaced web page or unusual processes
+consuming all resources in the system. Others may be way more subtle and
+almost impossible to detect. Like a small change to a single
+system configuration file. This is why having good
+monitoring in place is so important along with
+understanding your baseline. Once you figure out what normal
+traffic looks like on your network and what services you expect to see,
+outliers will be easier to detect. This is important because every false lead
+that the incident response team has to investigate means time and
+resources wasted. This has the potential to allow real
+intrusions to go undetected and uninvestigated longer. During detection and scoping correlating
+data from different systems can reveal a much bigger picture of what's happened. It might show how
+an intruder gained access. For example, you could see a connection event logged by
+the firewall from a suspicious IP address. Searching for other events related to this
+IP address may reveal login attempts in the authentication logs for a system. This would provide insight into where
+the attacker is coming from and what they attempted to do on the network. The authentication logs would
+also indicate whether or not they were able to
+successfully log into an account. If so, that's let you know
+what account is compromised. Once the scope of the incident is
+determined, the next step is containment. You need to contain the breach to prevent
+further damage for system compromises and malware infection. This is a pretty time sensitive step. You don't want the malware or attacker
+to use one compromised machine to pivot to other machines inside your network. This could broaden the incident scope and
+cause even more damage. Containment strategies will vary
+depending on the nature of the incident. If an account was compromised,
+change the password immediately. If the owner is unable to
+change the password right away, then lock the account, also revoke
+any long live authentication tokens. Since the attacker may
+have one of those two. If it's a malware infection, can our
+anti malware software quarantine or remove the infection. If not the infected machine needs to
+be removed from the network as soon as possible to prevent lateral movement
+around the network, to do this, you can adjust network based firewall rules to
+effectively quarantine the machine. You can also move the machine
+to a separate V Land used for security quarantining purposes. This would be a V-land with
+strict restrictions and filtering applied to prevent further
+infection of other systems and networks. It's important during this
+phase that efforts are made to avoid the destruction of any logs or
+forensic evidence. Attackers will usually try to cover
+their tracks by modifying logs and deleting files, especially when
+they suspect they've been caught. They'll take measures to make sure they
+keep their access to compromised systems. This could involve installing a backdoor
+or some kind of remote access malware. Another step to watch out for is creating
+a new user account that they can use to authenticate with in the future with
+effective logging, configurations and systems in place. These activities would
+show up in audit logs. So this type of access should be detected
+during an incident investigation. Then actions can be
+taken to remove access. I hope I'm not scaring you
+with all these scenarios, but it's better to be safe than sorry. Another part of incident analysis
+is determining severity, impact and recovery ability of the incident,. Severity includes factors like what and
+how many systems were compromised and how the breach affects business functions. An incident that's compromised a bunch
+of machines in the network would be more severe than one where a single
+web server was hacked. For example, you can imagine that
+the effort required to fix a large scale compromise would negatively affect
+the ability to do normal work. So the impact of an incident is also
+an important issue to consider if the organization only had one web
+server and it was compromised, it might be considered a much
+higher severity breach. It would probably have a direct externally
+visible impact on the business. Data exfiltration is the unauthorized
+transfer of data from a computer. It's also a very important concern
+when a security incident happens, hackers may try to steal data for
+a number of reasons. They may want to steal account
+information to provide access later. They may target business data to publish
+online to cause financial loss or damage to the organization's reputation. In some cases, the attacker may
+just want to cause damage and destruction which might involve
+the leading or corrupting data. What actions have been taken will affect
+the recovery ability of the incident. The recovery ability
+is how complicated and time consuming the recovery
+effort will be. An incident that can be recovered with
+a simple restoration from backup by following documented procedures would
+be considered easily recovered from. But an incident where an attacker deleted
+large amounts of customer information and wrecked havoc across lots of critical
+infrastructure systems would be way more difficult to recover from. It might not be possible
+to recover from it at all. In some cases, depending on backup
+systems and configurations, some data may be lost forever and
+can't be restored. Backups won't contain any changes or new data that were made
+after the last backup run.
+
+When you’ve had a data breach, you may need forensic analysis to analyze the attack. This analysis usually involves extensive evidence gathering. This reading covers some considerations for protecting the integrity of your forensic evidence and avoiding complications or issues related to how you handle evidence.
+
+Regulated data
+
+It’s important to consider the type of data involved in an incident. Many types of data are subject to government regulations that require you to take extra care when handling it. Here are some examples you’re likely to encounter as an IT support specialist.
+
+1. Protected Health Information: This information is regulated by the Health Insurance Portability and Accountability Act (HIPAA). It is personally identifiable health information that relates to:
+
+Past, present, or future physical or mental health or condition of an individual
+
+Administration of health care to the individual by a covered provider (for example, a hospital or doctor)
+
+Past, present, or future payment for the provision of health care to the individual
+
+2. Credit Card or Payment Card Industry (PCI) Information: This is information related to credit, debit, or other payment cards. PCI data is governed by the Payment Card Industry Data Security Standard (PCI DSS), a global information security standard designed to prevent fraud through increased control of credit card data.
+
+3. Personally Identifiable Information (PII): PII is a category of sensitive information associated with a person. Examples include addresses, Social Security Numbers, or similar personal ID numbers. 
+
+4. Federal Information Security Management Act (FISMA) compliance: FISMA requires federal agencies and those providing services on their behalf to develop, document, and implement specific IT security programs and to store data on U.S. soil. For example, organizations like NASA, the National Institutes of Health, the Department of Veteran Affairs—and any contractors processing or storing data for them—need to comply with FISMA.
+
+5. Export Administration Regulations (EAR) compliance: EAR is a set of U.S. government regulations administered by the U.S. Department of Commerce’s Bureau of Industry and Security (BIS). These regulations govern the export and re-export of commercial and dual-use goods, software, and technology. Dual-use goods are items that can be used both for civilian and military applications. These goods are heavily regulated because they can be classified for civilian use and then transformed for military purposes.
+
+Digital rights management (DRM) 
+Digital Rights Management (DRM) technologies can help ensure data regulations compliance. DRM technology comes in the form of either software or hardware solutions. Both options allow content creators to prevent deliberate piracy and unauthorized usage. DRM often involves using codes that prohibit content copying or limit the number of devices that can access a product. Content creators can also use DRM applications to restrict what users can do with their material. They can encrypt digital media so only someone with the decryption key can access it. This gives content creators and copyright holders a way to:
+
+Restrict users from editing, saving, sharing, printing, or taking screenshots of content or products
+
+Set expiration dates on media to prevent access beyond that date or limit the number of times users can access the media
+
+Limit access to specific devices, Internet Protocol (IP) addresses, or locations, such as limiting content to people in a specific country
+
+Organizations can use these DRM capabilities to protect sensitive data. DRM enables organizations to track who has viewed files, control access, and manage how people use the files. It also prevents files from being altered, duplicated, saved, or printed. DRM can help organizations comply with data protection regulations.
+
+End User Licensing Agreement (EULA)
+End User Licensing Agreements (EULAs) are similar to DRM in specifying certain rights and restrictions that apply to the software. You often encounter EULA statements when installing a software package, accessing a website, sharing a file, or downloading content. A EULA is usually considered a legally binding agreement between the owner of a product (e.g., a software publisher) and the product's end-user. The EULA specifies the rights and restrictions that apply to the software, and it’s usually presented to users during installation or setup of the software. You can’t complete an installation (or access, share, or download data) until you agree to the terms written in the EULA statement.
+
+Unlike DRM restrictions, EULAs are only valid if you agree to it (i.e., you check a box or click the ‘I Agree’ button). DRM restrictions don’t require your agreement—or rely on you to keep that agreement. DRMs are built into the product they protect, making it easier for content creators to ensure users do not violate restrictions.
+
+Chain of custody 
+“Chain of custody” refers to a process that tracks evidence movement through its collection, safeguarding, and analysis lifecycle. Maintaining the chain of custody makes it difficult for someone to argue that the evidence was tampered with or mishandled. Your chain of custody documentation should answer the following questions. Documentation for these questions must be maintained and filed in a secure location for current and future reference.
+
+Who collected the evidence? Evidence can include the afflicted or used devices, media, and associated peripherals.
+
+How was the evidence collected, and where was it located?
+
+Who seized and possessed the evidence?
+
+How was the evidence stored and protected in storage? The procedures involved in storing and protecting evidence are called evidence-custodian procedures. 
+
+Who took the evidence out of storage and why? Ongoing documentation of the names of individuals who check out evidence and why must be kept. 
+
+When a data breach occurs, forensic analysis usually involves taking an image of the disk. This makes a virtual copy of the hard drive. The copy lets an investigator analyze the disk’s contents without modifying or altering the original files. An alteration compromises the integrity of the evidence. This kind of compromised integrity is what you want to avoid when performing forensic investigations. 
+
+Key takeaways:
+Incident handling requires careful attention and documentation during an incident investigation's analysis and response phases. 
+
+Be familiar with what types of regulated data may be on your systems and ensure proper procedures are in place to ensure your organization’s compliance. 
+
+DRM technologies can be beneficial for safeguarding business-critical documents or sensitive information and helping organizations comply with data protection regulations. 
+
+When incident analysis involves the collection of forensic evidence, you must thoroughly document the chain of custody.
+
+
+
+Once the threat has been
+detected and contained, it has to be removed
+or remediated. When it comes to
+malware infection, this means removing the
+malware from affected systems. But in some cases, this may not be possible, so the affected
+systems have to be restored to a known
+good configuration. This can be done by rebuilding the machine or
+restoring from backup. Take care when removing
+malware from systems, because some malware is
+designed to be very persistent, which means it's resistant
+to being removed. But before we can
+start the recovery, we have to contain the incident. This might involve shutting
+down affected systems to prevent further damage
+or spread of an infection. On the flip side of that, affected systems may
+just have network access removed to cut off any communication with
+the compromised system. Again, the motivating factor here would be to
+prevent the spread of any infection or to remove remote
+access to the system. The containment strategy varies depending on the nature
+of the affected system. Let's say a critical piece of networking infrastructure
+was compromised. A quick shutdown may not work since it would impact
+other business operations. On top of that, removing
+networking access might trigger fail safes and
+attack software or malware. Let's say a piece of
+malware is designed to periodically check into a
+command and control server. Severing network
+communications with the infected host might cause the malware to trigger a self-destruct function in an attempt to destroy evidence. Forensic analysis may need to be done to
+analyze the attack. This is especially true when it comes to a malware infection. In the case of
+forensic analysis, affected machines might
+be investigated very closely to determine exactly
+what the attacker did. This is usually done by
+taking an image of the disk, essentially making a virtual
+copy of the hard drive. This lets the investigator analyze the contents of the disk without the risk of modifying or altering the original files. If that happened,
+it would compromise the integrity of any
+forensic evidence. Usually evidence gathering is also part of the incident
+response process. This provides evidenced
+to law enforcement if the organization wants to pursue legal action against
+the attackers. Forensic evidence is super
+useful for providing details of the attack to
+the security community. It allows other security
+teams to be aware of new threats and lets them
+better defend themselves. It's also very important
+that you get members from your legal team involved in
+any incident handling plans. Because an incident can have legal implications
+for the company, a lawyer should be
+available to consult and advise on the legal aspects
+of the investigation. It's crucial in order to avoid complications or
+issues of liability. Members of the public
+relations team should also get involved since these incidents can have an impact on a
+company's reputation. There's another part
+of the cleanup and recovery phase I
+should call out. We'll need to use information
+from the analysis to prevent any further
+intrusions or infections. First, we determine the entry
+point to figure out how the attacker got in or what vulnerability the
+malware exploited. This needs to be done at the
+same time as the cleanup. If you remove the malware
+infection without also addressing the
+underlying vulnerability, systems could become re-infected right after
+you clean them up. Postmortems can be a great
+way to document incidents. The learnings from
+post-mortems can be used to prevent those incidents
+from happening again. If a critical system
+has been compromised, remediation can be
+complicated because of downtime during
+remediation and recovery, logs have to be audited
+to determine exactly what the attacker did while they
+had access to the system. They'll also tell you what
+data the attacker accessed. Systems must be
+scrutinized to ensure no back doors have
+been installed or malware planted
+on the system. Depending on the severity of
+the compromise or infection, it might be necessary to rebuild the system
+from the ground up. Clean up will typically
+involve restoring from a backup point to a known
+good configuration. Infected or corrupted
+system files can be restored from
+known good copies. Sometimes cleanup can be
+very simple and quick. I hope that's what you
+find more often than not. If a website was defaced, the attacker may
+have simply uploaded their defaced HTML file and pointed the web
+server at the new file. A configuration file
+change and deletion of the attackers HTML file
+would undo those changes. Even so, efforts
+needs to be made to determine how the
+attacker got access. That vulnerability should be closed to prevent
+any future attacks. When all traces of the
+attack have been removed and discovered and the known
+vulnerabilities have been closed, you can move on
+to the last step. That's when systems need
+to be thoroughly tested to make sure proper
+functionality has been restored. Usually, affected systems would also remain
+under close watch, sometimes with additional
+detailed monitoring and logging enabled. This is to watch for
+any additional signs of an intrusion in case something was missed
+during the cleanup. It's also possible
+that the attacker will attempt to attack
+the same target again. There's a very high
+chance that they use the same or similar
+attack methodology on other targets
+in your network. It's important to incorporate the lessons you've learned from any incident into your
+overall security defenses. Update firewall
+rules and ACLs if an exposure was discovered in the course of
+the investigation. Create new definitions
+and rules for intrusion detection
+systems that can watch for the signs of
+the same attack again. Stay vigilant and prepared to protect your
+system from attacks. Remember that at some point, some security
+breach will happen, just they come and execute your plan to counter
+attack the breach.
+
+Welcome to this video that
+discusses network security and explores various strategies for safeguarding
+your infrastructure. After watching this video, you will be able to
+define network security, list the primary objectives
+of network security, summarize the importance
+of network security, describe the various tools and methods for securing a network. Network security is a
+protective measure, safeguarding networking
+infrastructure from unauthorized access,
+exploitation, or theft. It involves establishing
+a robust infrastructure that ensures a secure operating
+environment for devices, programs, users,
+and applications. Network security mechanisms are similar to a series of
+barriers around a castle, each designed to provide an extra layer of protection
+against potential breaches. Perhaps there's a
+moat filled with crocodiles to dissuade
+would-be attackers. Then a wall surrounds
+the castle with a single-locked gate and
+guards at every corner. Finally, additional
+guards are strategically stationed within
+the castle walls if attackers breach the moat, the locked gates, and
+the external guards. This multilayered
+approach to security is referred to as defense in depth. Network security has
+three primary objectives: block unauthorized entities from accessing network assets, identify and halt ongoing
+cyberthreats and infractions, and ensure that legitimate users can access network assets
+securely when required. Network security mechanisms
+operate on two fronts, the external boundary and the network's
+internal structure. Security measures
+are implemented on the network's edge to prevent threats from getting past
+the network's perimeter. However, despite
+external security, there's a possibility
+of intrusions. Hence, additional
+safeguards are positioned internally, protecting
+critical components like computers and databases. If attackers get through
+the outer defenses, they face further resistance. Cybersecurity professionals
+combine several tools and methods to provide
+a secure network. Let's look at each
+of these tools and techniques in detail. Let's start with firewalls. Firewalls serve as a hardware or software
+barrier to filter out unauthorized or malicious data traffic entering
+or leaving a network. They are strategically
+positioned at network entry points, ensuring only authorized
+communication can pass through. Firewalls vary in
+sophistication, with the basic ones
+scrutinizing traffic through packet filtering, which involves
+examining each packet to verify its approved
+source and destination. The more innovative,
+next-generation firewalls incorporate intrusion
+prevention systems and leverage artificial
+intelligence, AI, and machine learning,
+ML, technologies. Firewalls can also comprehend
+and oversee applications and use threat intelligence to deliver a more fortified
+line of defense. Network access control, NAC, acts as a gatekeeper
+for network security. It manages user
+authentication and authorization to control
+network entry and activities. The authentication
+process ensures that users match their
+claimed identity. After authentication,
+these individuals are granted specific permissions to access particular network areas. In addition to establishing
+user identity, specific NAC systems undertake device risk assessments before
+granting network access. This approach helps
+mitigate the risks posed by non-compliant
+or vulnerable devices by restricting
+access for devices with outdated malware protection
+or improper configuration. Let's move on to the
+next security tool, intrusion detection and
+prevention system, IDPS. An IDPS is situated just
+beyond the firewall. It scrutinizes incoming
+network traffic to identify and manage
+potential security threats. IDPSs evolved from traditional intrusion
+detection systems, IDSs, that detect and signal unusual
+activities for analysis. However, modern
+IDPSs have enhanced functionalities, allowing them to react to perceived
+threats proactively. These response capabilities
+include actions like halting suspicious traffic
+or terminating connections. Next, a virtual private network, or VPN, is beneficial for concealing your
+online identity. It encrypts your internet
+traffic and obscures your IP addresses and
+geographical location. You can use a VPN to reroute your internet connection
+through a secured server, which then interfaces with the wider internet
+on your behalf. This functionality becomes
+extremely important for remote employees who need to securely connect to
+enterprise systems, especially when using vulnerable
+public Wi-Fi networks at cafes or airports. Next we'll discuss
+network segmentation, a tactic that partitions
+a network into multiple smaller
+segments or subnetworks. This process strengthens
+security by limiting the lateral movement
+of potential attackers within the network. Here, each segment operates under unique policies
+and access controls, effectively compartmentalizing
+the network to isolate sensitive information
+and critical systems. For example, you can
+segregate a segment that handles sensitive financial data from the rest of the network, thereby narrowing exposure
+points and reducing the risk of unauthorized access to this critical information. Segmentation also
+enables organizations to contain and control the
+spread of security breaches. By confining threats
+to isolated segments, you can minimize
+their impact and take remedial actions without
+compromising the entire network. Let's discuss endpoint security. Endpoints include devices
+such as computers, mobile devices, and servers
+that connect to the network. Endpoint security
+includes approaches and technologies that secure these endpoints to
+protect the network. It plays a pivotal role in
+organizational security, as endpoints serve as potential entry
+points for attackers. Comprehensive endpoint
+security solutions use antivirus
+software, antimalware, and personal firewalls, among other tools to
+proactively detect, prevent, and respond to threats. These security measures help
+manage and monitor access, ensuring all endpoints adhere to security policies before
+connecting to the network. In addition to protecting
+individual devices, endpoint security maintains
+network integrity by ensuring all device data exchanges
+comply with security standards. Secured perimeters
+have extended beyond traditional office
+boundaries with the rise in remote work and the
+adoption of bring your own device
+or BYOD policies. Therefore, ensuring your
+endpoint devices are free from malicious influences
+helps networks remain resilient against external
+and internal threats. Security information
+and event management, or SIEM, is another protective
+measure integral to enhancing network security. It aggregates and analyzes log and event data from servers, endpoints, and network devices. By centralizing data collection, SIEM systems enable
+real-time visibility into an organization's
+security posture, identifying abnormal
+activity indicative of a security incident. Advanced SIEMs also
+leverage ML and AI to automate the identification of
+sophisticated threats. They connect disparate
+data points to identify patterns of
+malicious activity, helping detect and promptly respond to potential
+security breaches. SIEM alerts allow
+security analysts to address threats before they escalate into major incidents. Finally, let's discuss SOAR, which stands for
+security orchestration, automation, and response. In collaboration
+with SIEM systems, SOAR platforms streamline
+security operations in high-volume environments. These solutions integrate various security
+tools and processes, automating workflows and
+incident response actions. This automation
+solution empowers security teams to manage
+alerts efficiently, often reducing the time
+to respond to incidents. SOAR platforms also help reduce the risk
+of alert fatigue, allowing cybersecurity
+professionals to focus on more complex threats. Now that you've learned
+about the importance of network security and various
+protective measures, you can safeguard
+your organization's network effectively. In this video, you learned
+that network security protects networking infrastructure
+from unauthorized access, exploitation, or theft. Network security has
+three primary objectives: block unauthorized entities from accessing network assets, identify and halt ongoing
+cyberthreats and infractions, and ensure that legitimate users can securely obtain network
+assets when required. Cybersecurity professionals combine several technologies to provide a secure network:
+firewalls, NACs, IDPSs, VPNs, network
+segmentation, endpoint security solutions, SIEM, and SOAR.
+
+Welcome to this video
+on security controls. After watching this video, you will be able to identify different types of
+security controls, describe the importance of integrating
+administrative, physical, and technical controls
+in safety initiatives, recognize the distinct
+functions of security controls. Security controls are essential to safeguarding the
+confidentiality, integrity, and availability of critical assets from
+potential threats. These controls actively
+prevent, detect, and manage risks and
+vulnerabilities in an organization. Various security controls
+safeguard hardware, software, networks, and
+data from potential harm. Some of these include
+administrative controls, physical controls, and
+technical controls. Administrative controls
+established guidelines and methodologies to ensure employees
+and stakeholders adhere to proper
+security protocols. Simply establishing policies and procedures is not enough. Implementation of these
+controls is crucial. The next is physical controls. These are measures
+for securing and protecting the tangible
+assets of an organization, such as the company's hardware, infrastructure, and environment. Physical controls
+include a range of strategies that prevent
+unauthorized access, damage, or interference with company facilities
+and resources. This type of control serves as the first line of
+defense in protecting an organization's
+physical resources from potential breaches or
+environmental hazards. Lastly, technical controls
+are security measures that protect information
+confidentiality, integrity, and availability. Organizations implement these
+controls using hardware, software, or firmware,
+automating defensive operations. Technical controls detect and respond to security incidents, mitigating vulnerabilities,
+and ensuring that only authorized individuals gain access to sensitive
+systems and data. Safety initiatives need to integrate a blend
+of administrative, physical, and technical controls to safeguard against
+threats effectively. The selection of controls depends on an organization's
+assessment of risk and its chosen method of mitigating each identified risk. For example, say you want to ensure the data stored in
+your data center is secure. Let's explore how
+we can integrate controls across all
+three categories. Using administrative
+controls, we can implement a strict access policy where only authorized
+personnel can use the servers. This can be complemented by
+regular training programs to educate the staff
+about best practices and maintaining server security. We can also implement
+physical controls. Protective mechanisms like
+biometric security or alarm systems would ensure that access to the server
+room is restricted. Lastly, for technical controls, we could deploy firewalls and intrusion detection
+systems to serve as a first line of defense
+against external attacks. When a security measure
+is put in place, its function is broadly specified into
+different categories. Some of these include
+deterrent controls, preventive controls,
+detective controls, and corrective controls. Deterrent controls
+discourage deviations from established security
+procedures and decrease the likelihood
+of intentional attacks. They facilitate informed
+decision making and discourage the use
+of insecure methods. Within an organization,
+implementing preventive controls aims to stop security incidents
+before they happen. By integrating such measures, organizations actively
+obstruct unauthorized actions, ensuring preemptive strategies
+address potential threats. Next, detective controls play a critical role in
+identifying and signaling the presence of any improper
+or unauthorized actions taking place within
+an organization. These controls are essential for timely discovery and response
+to breaches in security, employing an array
+of instruments, methodologies, and
+established practices. Finally, corrective
+controls are measures implemented to repair
+the consequences of a security violation. They incorporate
+strategies designed to not only alleviate the
+impacts of an incident, but also to prevent
+its recurrence. Let's return to the scenario
+where we want to secure a server room containing critical information
+and systems. Assume that we want to implement physical controls using
+various detective, corrective, deterrent,
+and preventive functions. Detective physical controls in the server room could include CCTV surveillance
+systems which monitor the area for unauthorized
+access or suspicious activity. Corrective physical controls
+could involve establishing lockdown protocols in case
+of a security violation. Deterrent physical
+controls might include clear signage indicating surveillance and
+restricted access. Preventive physical
+controls could include key card access systems, ensuring that only
+authorized individuals with proper credentials can
+enter the server room. In this video, you learned that security controls are essential for safeguarding the
+confidentiality, integrity, and availability of critical information and other crucial assets
+from potential threats. There are various
+security controls that safeguard hardware, software, networks, and
+data from potential harm. These include
+administrative controls, physical controls, and
+technical controls. When a security measure
+is implemented, its function is broadly specified into
+different categories. Some of these include
+deterrent controls, preventive controls,
+detective controls, and corrective controls.
+
+Welcome to this video
+on system security. After watching this video, you will
+be able define a computer system and its components identify various methods
+and tools to maintain system security. A computer system is a comprehensive
+hardware and software setup with all essential components required for
+performing computing operations. It consists of a central processing unit
+(CPU) for executing instructions, memory for storing data, input and
+output devices for interaction, and storage for saving files and applications. These components process information and
+produce the desired outcome for users and other systems. In an era of evolving threats, it is
+essential to have system security for computer systems. System security protects
+computer systems and their information from unauthorized
+access, damage, or theft. Effective system security safeguards
+systems against disruptions from minor inconveniences to catastrophic failures. IT professionals actively
+implement a variety of methods and tools to maintain system security. Some of these are access controls
+encryption, patching, regular backups, system-level firewalls,
+and antivirus software. Let's explore these in detail. Access controls are security features that
+restrict and regulate who can view or use resources in a computing system. These controls are crucial to system
+security as they limit access to sensitive information to only authorized users. You can implement access controls using
+a variety of methods such as permissions, user credentials, and access rights. These methods can range from simple
+password-based systems to more complex mechanisms, such as two-factor
+authentication, biometric verification, and virtual private networks. The next method is encryption. It protects confidentiality by
+converting information into a code, obscuring the original content to anyone
+except those with the key to decrypt it. It is one of the most secure ways to
+ensure that data remains confidential, especially during transmission
+over the internet or any other potentially insecure network. For files,
+encryption tools can encode the data, making them inaccessible without
+the correct encryption key. This means even if someone were to gain
+unauthorized access to the encrypted files without the key,
+they would be unable to read the content. In full-disk encryption, every file and
+piece of data on the drive is encrypted. This is particularly useful for
+protecting sensitive data. In the event that a laptop or external
+drive was lost or stolen, the entire disk contents are inaccessible without
+the correct password or decryption key. The third method is patching. It refers to updating software and
+systems with small pieces of code, typically known as patches or updates. These patches and
+updates fix vulnerabilities and bugs or enhance functionality. You can apply updates to various system
+parts, including the operating system, applications, and firmware. Updates often include fixes for
+security loopholes that hackers could use to gain unauthorized access or
+disrupt operations. Proper patch management is essential
+in cybersecurity strategies, as it strengthens the defense
+against cyberthreats and is part of a proactive approach
+to securing IT environments. Regular backups are another method for
+maintaining system security. The method involves creating
+copies of data from a system so it can be restored in case of data loss. Whether due to hardware failure,
+data corruption, or a cyberattack such as ransomware. Backing up a system involves copying and archiving computer data
+to restore the original in case of data loss. System backups can be conducted in
+various forms, ranging from full backups which capture everything on the system,
+to incremental and differential backups, which only store changes
+since the last backup. This flexibility allows for tailoring
+backup strategies to the needs and resources of an organization. Lets now explore a few tools. System-level firewalls, or host-based firewalls, are software that
+runs on individual computers or servers. These firewalls operate by
+inspecting incoming and outgoing network packets
+against predefined rule sets. The rules dictate whether specific packet
+types should be allowed or denied, usually based on parameters such as IP addresses,
+port numbers, and the protocol used. This ensures the defense of the individual
+system against unauthorized access and surveillance if a malicious actor
+bypasses the perimeter defenses. Antivirus software is another
+critical tool for system security, serving as the first line of defense
+against viruses and malware. It scans computer systems for known
+threats using a regularly updated database of virus signatures to include
+the latest malware definitions. In this video, you learned that a computer
+system is a comprehensive hardware and software setup with all essential
+components required for performing computing operations. System security protects
+computer systems and their information from unauthorized
+access, damage, or theft. It professionals actively
+implement a variety of methods and tools to maintain system security,
+including access controls, encryption, patching, regular backups, system-level
+firewalls, and antivirus software.
+
+Welcome to this video about the significance of critical
+thinking in cybersecurity. After watching this video, you will be able to
+define critical thinking, explain the significance of critical thinking
+in cybersecurity, analyze real-world
+applications of critical thinking
+in cybersecurity. Critical thinking refers to
+the capacity of objectively analyzing information and
+forming reason judgments. It goes beyond mere technical
+knowledge and delves into the individual's analytical
+and reasoning capabilities. While critical thinking is an indispensable skill
+across all professions, its impact is particularly
+significant in cybersecurity. This heightened importance stems from the field's
+rapid evolution, characterized by complexity and a constantly changing
+environment. It is also partially due to cybersecurity involving diverse stakeholders,
+relentless adversaries, and a continuous influx
+of new technologies. In such a dynamic domain, the ability to think
+critically is paramount. It equips professionals with the skills to anticipate
+the unconventional, make quick yet
+informed decisions, and devise innovative strategies to counter potential threats. In the cybersecurity landscape, critical thinking can often
+be the difference between a successfully
+thwarted cyberattack and a colossal security breach. What does critical
+thinking entail? Critical thinking
+entails thoroughly evaluating sources like data, facts, observable phenomena,
+and research findings. However, it is not merely an
+accumulation of information, but rather an active process of systematically understanding
+and evaluating it. Critical thinking goes beyond the typical approach of
+passively receiving information. Instead, it demands
+a proactive approach where an individual asks
+questions, defines problems, examines evidence, analyzes
+assumptions and biases, avoids emotional reasoning,
+and tolerates ambiguity. Proficient critical thinkers are those who can draw
+reasonable conclusions from a given set of information
+and discriminate between valuable and
+less valuable details. They then leverage
+these conclusions to solve problems
+or make decisions. While we have discussed the significance of
+critical thinking, it's essential to note
+that the advent of the digital age and
+the Google it culture, can sometimes overshadow
+its importance. The ease and speed of access to information often means
+that our first reaction to a problem is to find a predefined solution rather than critically
+analyze the situation. While this approach may
+offer quick solutions, it does not necessarily
+cultivate knowledge or foster the development
+of analytical skills. How can we apply
+critical thinking skills in cybersecurity? Let's look at a few
+real-world applications. Firstly, cybersecurity
+professionals can employ critical thinking
+skills when reading and evaluating
+information online. The fact that anyone can
+publish information online implies not all content can
+be considered reliable. Applying critical
+thinking skills will help individuals
+assess the validity of information and
+the credibility of online sources before
+accepting them as truth. For example, a
+cybersecurity analyst could demonstrate
+critical thinking by cross-referencing reported
+vulnerabilities from various tech forums and security advisories before
+implementing a patch. Secondly, critical thinking will empower cybersecurity
+professionals to engage in fruitful
+discussions. This is because
+critical thinking encourages the scrutiny of
+underlying presumptions, discourages emotion-
+driven reasoning, and supports diverse
+perspectives. For instance, if a team member mentions a cyberthreat that
+they are concerned about, an individual applying
+critical thinking might respond by saying, "While the initial
+reports are alarming, let's critically examine the credibility
+of the source and compare it with other data before deciding on
+our course of action." Thirdly, critical thinkers are conscientious about
+the moral aspects of digital interactions, including using
+technology responsibly, honoring digital privacy, and upholding moral standards
+in virtual communities. For instance, a critical
+thinker will strive to create a data policy that
+respects user privacy, while delivering
+the personalized experience the user expects. Further, cybersecurity
+is an area that is fraught with complex obstacles that require
+problem-solving skills. This aspect brings us to the fourth application of
+critical thinking skills. Individuals who apply
+such skills are more adept at dissecting
+these complex issues, designing strategic solutions, and implementing
+successful mitigations. For example, in a suspected
+email phishing attempt, a critical thinker scrutinizes the language and
+links in the email and cross-checks them with known phishing patterns before clicking
+anything suspicious. Fifthly, critical
+thinking enables cybersecurity professionals to perform root cause analysis, identifying the symptoms of the security incidents and the underlying vulnerabilities
+that led to them. In an industry where threat
+patterns continually evolve, this skill is crucial for
+developing effective, long-term security strategies rather than just quick fixes. For instance, a
+cybersecurity expert will critically interpret an anomaly in network traffic as a sign of a potential
+breach and act promptly, avoiding a full-scale intrusion. Sixthly, critical
+thinkers tend to question existing methods and are open to integrating new technologies
+and methodologies, fostering innovation
+in cybersecurity. Their analytical
+approach will ensure thoroughness and compliance
+and auditing processes, helping organizations maintain
+robust security frameworks and adhere to
+complex regulations. For instance, a discerning cybersecurity professional
+will question the long-term effectiveness of existing encryption methods and explore quantum computing
+to enhance data security. Finally, lifelong learning is
+integral to cybersecurity, especially in the face of an ever-evolving
+cyberthreat landscape. Critical thinking helps
+professionals readily adapt to the dynamic
+nature of cybersecurity. These skills enable
+them to acquire new insights and strategies
+to counter emerging threats. For example,
+cybersecurity experts may allocate weekly hours
+to attend webinars, participate in
+professional forums, or pursue industry
+certifications, ensuring they remain
+at the forefront of security trends and
+technological advancements. To conclude, critical
+thinking forms the foundation of effective
+cybersecurity practices. It enables cybersecurity
+professionals to make informed decisions, foster innovative solutions, and stay ahead of
+evolving threats. As we move forward
+in this digital era, applying critical
+thinking skills in cybersecurity isn't just
+recommended, it's necessary. Why? Because critical
+thinking skills can empower cybersecurity
+professionals to better protect the
+confidentiality, integrity, and availability of their
+digital infrastructures by fostering
+continuous learning, critical evaluation, and
+ethical considerations. In this video, you learned
+that critical thinking involves objectively
+analyzing information and forming reasoned judgments. Critical thinking forms the bedrock of effective
+cybersecurity, enabling professionals to
+make informed decisions, innovate, and
+anticipate threats. You can employ critical
+thinking in cybersecurity to evaluate online information, engage in productive
+discussions, consider ethical aspects,
+navigate complex obstacles, perform root cause analysis, embrace new technologies, and
+pursue lifelong learning.
+
+Welcome to this video on the
+critical thinking model. After watching this video, you will be able to explain the various elements of the
+critical thinking model, describe the significance of critical thinking for
+cybersecurity professionals, summarize the impacts of the
+critical thinking model. In cybersecurity a comprehensive
+critical thinking model comprises five key elements. Characteristics of
+thought, technical skills, interpersonal skills, theoretical and
+experimental knowledge, and intellectual abilities. Let's look at each
+element in detail. Critical thinking
+characteristics of thought are the elements that guide how an individual approaches problem-solving
+and decision-making. These characteristics
+include curiosity, skepticism, objectivity, and
+an intent to seek the truth. Curiosity is the
+eagerness to learn, explore, and understand
+the world around us. It drives us to challenge
+the norm and dig deeper into the intricacies of
+how and why things work. This characteristic will push cybersecurity professionals
+to uncover vulnerabilities, anticipate potential
+threats, and discover novel insights and strategies that fortify security measures. Moving on, skepticism is
+the practice of questioning the validity of the information before accepting it as factual. It involves a cautious
+and analytical approach to evaluating evidence. Skepticism requires
+cybersecurity professionals to closely scrutinize data, evaluate sources of information, and recognize the potential of misinformation or bias
+before forming conclusions. Similarly, objectivity
+is the ability to analyze issues and evidence without
+the interference of personal feelings,
+prejudices, or biases. This trait requires
+cybersecurity professionals to approach each scenario with a clear factual
+perspective rather than relying on assumptions or intuitions to make decisions. These critical
+characteristics of thought empower an individual to
+question assumptions, scrutinize conditions,
+and objectively assess information,
+fostering critical thinking. The next element,
+technical skills, refers to the specific
+capabilities an individual must possess to perform
+particular tasks or functions within
+cybersecurity. These capabilities could
+include expertise encoding, knowledge of a range
+of IT protocols, thorough understanding
+of network architecture, familiarity with different
+types of malware, and proficiency in using
+specialized cybersecurity tools. These skills are crucial for cybersecurity professionals
+to understand the technical facets
+of a problem while devising a concrete,
+practical solution. The third element of the
+critical thinking model is interpersonal skills. Despite being often overlooked, these skills are vital within
+the cybersecurity domain. The key competencies include
+clear communication, teamwork, negotiation,
+and project management. We'll look at how these interpersonal
+skills are crucial for cybersecurity professionals to effectively
+share information, collaborate on solutions, and
+manage dynamic challenges. Communication skills
+are fundamental for cybersecurity professionals
+because they must often explain complex
+technical issues to individuals lacking
+expert domain knowledge. Whether it is discussing system vulnerabilities with
+other technical teams, or conveying security risks
+to non-technical stakeholders clear communication
+ensures that everyone is informed and able to act on
+the information promptly. Similarly, teamwork will allow cybersecurity
+professionals to combine diverse expertise
+and perspectives. Teams can develop strategies, respond swiftly to threats, and maintain robust security protocols
+through collaboration. Teamwork will also help ensure
+cybersecurity measures are comprehensive and potential vulnerabilities
+are addressed. Negotiation skills are critical for cybersecurity
+professionals as they often encounter conflicting objectives
+and limited resources. They are frequently
+required to explain the importance of security
+and security investments. Hence, effective negotiation
+can help with advocating for necessary security
+policies and procedures while balancing organizational
+and client demands. Finally, project management
+skills are essential for cybersecurity
+professionals in charge of implementing complex security
+projects and initiatives. Effective project management
+skills will help them plan, organize, and direct resources within a specified
+time frame and budget. The next element, theoretical
+and experimental knowledge, is the bedrock of the
+critical thinking model. It refers to the theoretical
+understanding of cybersecurity principles and
+the practical application of these principles in
+real-world situations. Theoretical knowledge
+provides a foundation, whereas experimental
+knowledge gained through hands-on experience ensures
+the effective application of theory into practice. Finally, intellectual
+abilities are the cognitive functions that enable cybersecurity
+professionals to learn, understand, and apply
+knowledge effectively. These abilities include memory, attention, logical reasoning,
+and problem-solving skills. Memory skills are vital, as these professionals
+must recall past incidents and solutions while
+devising new strategies. Similarly, focused
+attention is required to detect and respond to
+security breaches efficiently. Additionally, logical
+reasoning skills are required to analyze complex
+situations and assess risk. Lastly, problem-solving
+abilities will help cybersecurity
+professionals promptly mitigate risks and implement robust security measures,
+safeguarding digital assets. Excelling in these
+intellectual skills is paramount for
+assimilating information, making connections between
+different pieces of data, and applying that knowledge
+to solve complex problems. Thus, the critical
+thinking model represents a holistic approach combining the five elements into a process for tackling
+cybersecurity challenges. The model also promotes
+balanced decision-making, where every facet of the
+problem is analyzed and the most effective solution is identified and implemented. By fostering these skills, we can strengthen
+our defenses against the ever-evolving cyber threats and ensure a safer
+digital world. In this video, you learned that the critical thinking
+model has five elements; characteristics of
+thought, technical skills, interpersonal skills, theoretical and
+experimental knowledge, intellectual abilities. Critical thinking skills empower cybersecurity professionals
+to promptly detect breaches, communicate effectively,
+make informed decisions, and implement robust solutions. The critical thinking
+model offers a holistic approach to addressing cybersecurity
+challenges.
+
+Interview sample video:
+Hi, I'm Rob. I'm Candice. Congrats on making it
+through this course. Now that you've
+made it this far, we're here to give you a sneak peek into
+what an interview on the technical subjects covered by this course might look like. We hope this will help
+you have a better idea what to expect in
+your next interview. Just already keep learning
+and keep practicing. In this scenario, let's say
+I'm a small business owner and I only have
+about 15 employees, but I expect it to grow over
+the next couple of years. I had a friend who
+was hacked that lost a lot of sensitive data, but I want to make sure
+I understand how to prevent that happening
+from my business. Walk me through some best
+practices for network security. You want to list out
+all the services that you'll need on a network, and then you also
+want to disable all the services
+that you won't use. This principle can be applied to all aspects
+of your infrastructure. For example, we have a firewall, we can configure it to
+allow all the services that you want and then disable all the services
+that you don't want, so it will block
+all that traffic. Interesting. Why do we use that philosophy or what does
+that philosophy called? We'll use this because it allows for you to not have vulnerabilities
+to slip through, and this is also
+called whitelisting , instead of blacklisting. Why would we disable things
+that I wouldn't be using? The reason why we want to restrict these services
+that you won't use is because it will allow you to know what's coming in
+because you know what you have allowed
+instead of having some services block because it will allow more vulnerabilities
+to come through. Good. What are some other
+things that I might need? Another thing you might need is a network
+monitoring solution. This will be helpful because
+they'll allow you to identify traffic that's
+coming through your network. One other thing that comes up, I worked with a lot
+of contractors, and a lot of times they'll bring their own machines
+onto our network. Is there anything I need
+to be concerned about with them connecting to my network
+with their own machines? Yes. You want to restrict
+those machines just because you don't control them and you don't know
+what's on them. I would say we could set
+up a different segment on the network or we can have a
+different wireless network. Good. Yeah, so wireless
+is actually really important and I do want to
+have a wireless network. How do we actually secure
+the wireless network? What would be some things
+that we can implement there? We can use strong
+encryption like WPA2. What is WPA2? Why is that better than some of the
+other encryption method? WPA2 improves the
+security of a network because it has a stronger
+encryption method called AES. The last thing I
+wanted to ask you about was phishing attacks. I've heard that this
+is a common way for hackers to get passwords
+and things like that. I want to make sure that
+my employees don't get hacked by a phishing attack.
+How do we prevent that? You want to have your employees
+use strong passwords. You can set the password
+requirements to have symbols, numbers, uppercase and
+lowercase letters. You want to have your
+employees change their passwords a few
+times throughout the year, also have them use
+two-factor authentication, and you can just educate your employees just to
+let them know not to open up suspicious emails or emails from senders
+that they don't know. Can you explain what two
+factor is real quick? Yes. Two-factor
+authentication is two variations of
+authentication methods, and the authentication methods
+can be either a password, fingerprint, something that's
+related to biometrics, or it can also be
+a security chip. Great. I didn't know
+that. Thanks very much. Thanks. In this scenario, we've seen how important it is
+to clearly explain yourself and to articulate IT concepts and the advantages of the technologies chosen. In a technical interview, they're going to be
+a lot of technical concepts that need
+to be explained. It's important to keep calm and describe them
+without panicking. This was our last role-play in the last course
+of the program. Congratulations on making
+it all the way here. We hope these roleplays
+may have helped you get a better idea of what your next interview
+might look like. You may want to review
+all the tips we provided way back in
+the first course so you're prepared and you nail your IT support
+interview. Good luck.
+
+Hello and welcome to the Google Career Certificate
+focused on cybersecurity. I'm so excited that you're here! My name is Toni, and I am a Security Engineering
+Manager at Google. I'll be your instructor for the first course of this
+certificate program. By starting this course, you've already taken
+a big step towards building new skills that will
+help you in your career. Cybersecurity may seem
+daunting at first, but you'd be surprised by the different backgrounds
+many of us have. I worked as an intelligence
+analyst before I got my first job in
+the security industry, and I'm excited to be your instructor as you begin
+your journey into security. The demand for
+security professionals is growing at an
+incredible rate. By 2030, the U.S. Bureau
+of Labor Statistics expects security roles to
+grow by more than 30%, which is higher than the average growth rate
+for other occupations. Global access to the
+internet is expanding. Every day, more people and organizations are adopting
+new digital technologies. Having a diverse community of security professionals
+with unique backgrounds, perspectives, and experiences is essential for protecting and
+serving different markets. Working in security
+has allowed me to work with people from
+all around the world. Working with people who have diverse backgrounds
+ensures that our teams get to ask lots of questions and come up with more
+creative solutions. The main objective
+in security is to protect organizations
+and people. This line of work allows you to support and interact with
+people across the globe. There are many openings for entry-level security analysts, and employers are
+struggling to find enough candidates with
+the right expertise. This program is designed to
+give you the knowledge and skills you need to start or advance in the
+security profession. No matter your
+current skill level, by the time you finish
+this certificate program, you'll be prepared to find a security-related job or
+expand your career in security. You may be wondering, what do security
+professionals actually do? Have you ever had to
+update your password online to include a number
+or a special symbol? If so, then you're
+already familiar with basic security measures,
+like password management. And if you've ever received
+a notification from a service provider about
+stolen data or a software hack, then you have
+first-hand experience with the impact of
+a security breach. If you've ever asked yourself how organizations
+safeguard data, then you already have two important traits
+that are necessary to thrive in this industry:
+curiosity and excitement. Security analysts help minimize risks to organizations
+and people. Analysts work to proactively
+guard against incidents while continuously monitoring
+systems and networks. And, if an incident does occur, they investigate and
+report their findings. They are always asking questions and looking
+for solutions. One of the best things
+about the security industry is the many paths and career
+options it exposes you to. Each option involves
+a unique set of skills and responsibilities. No matter what your
+background is, you'll probably find that you already have some
+relevant experience. If you enjoy collaborating
+with and helping others, solving puzzles, and are
+motivated by challenges, then this is the career for you. For example, my background as an intelligence analyst had nothing to do with
+cybersecurity. However, having strong critical thinking skills
+and communication skills provided a solid foundation for my success when I decided to
+pursue a career in security. If you're not sure what
+direction you want to take in the security
+industry, that's okay. This program will give
+you an overview of many different types
+of available jobs. It will also let you explore certain specialized
+skill sets to help you figure out where you
+want to take your career. The Google Career
+Certificates are designed by industry professionals
+with decades of experience here at Google. You'll have a
+different expert from Google guide you through each
+course in the certificate. We'll share our
+knowledge in videos, provide practice opportunities
+with hands-on activities, and take you through
+real scenarios that you might
+encounter on the job. Throughout this
+program, you'll gain hands-on practice with detecting and responding to attacks, monitoring and
+protecting networks, investigating incidents, and writing code
+to automate tasks. The program is made up of
+several courses that are designed to help you
+land an entry-level job. You'll learn about topics
+like: core security concepts; security domains;
+network security; computing basics,
+including Linux and SQL; along with understanding assets, threats, and vulnerabilities. Our goal is to help you reach your goal of joining
+the security industry. You'll learn about
+incident detection and response, as well as how to use programming languages,
+like Python, to accomplish common
+security tasks. You'll also gain valuable job search strategies
+that will benefit you as you begin to find and apply for jobs in the
+security profession. Completing this Google
+Career Certificate will help you develop
+skills and learn how to use tools to prepare you for a job in a fast-growing,
+high-demand field. The certificate is designed
+to prepare you for a job in 3-6 months if you work on the
+certificate part-time. Once you graduate, you can connect with over 200 employers who are interested in hiring Google Career Certificate
+graduates, like you. Whether you're looking
+to switch jobs, start a new career, or level up your skills, this Google Career
+Certificate can open doors to new
+job opportunities. You don't need prior
+experience or knowledge in the security field because this certificate program
+will begin with the basics. I'll be by your side
+throughout this first course, making sure that you're learning the foundational
+knowledge needed to succeed in the field. This program is also flexible. You can complete all of the courses in this
+certificate on your own terms and at
+your own pace, online. We've gathered some amazing
+instructors to support you on your journey, and they'd like to introduce
+themselves now: Hi! My name is Ashley, and I'm a Customer
+Engineering Enablement Lead for Security
+Operations Sales at Google. I'll take you through
+security domains, frameworks and controls, as well as common
+security threats, risks, and vulnerabilities. You'll also be introduced to common tools used by
+security analysts. I can't wait to get started! Hi there! My name is Chris, and I'm the Chief
+Information Security Officer for Google Fiber. I'm excited to talk to you about the structure
+of a network, network protocols,
+common network attacks, and how to secure a network. Hi there! My name is Kim, and I'm a Technical
+Program Manager at Google. I will guide you through
+foundational computing skills that support the work
+of a security analyst. We'll also learn about
+operating systems, the Linux command line, and SQL. Hi! My name is Da'Queshia, and I'm a Security
+Engineer at Google. Together we'll
+explore protecting organizational assets
+through a variety of security controls and develop a deeper understanding of
+risks and vulnerabilities. Hi! My name is Dave, and I'm a Principal Security
+Strategist at Google. In our time together,
+we'll learn about detecting and responding
+to security incidents. You'll also have the chance
+to monitor and analyze network activity using
+powerful security tools. Hello! I'm Angel, and I'm a Security
+Engineer at Google. We'll explore foundational
+Python programming concepts to help you automate
+common security tasks. Hello! I'm Dion. I'm a Program Manager at Google. I'm your instructor for the first portion of the
+final course of the program. There, we'll discuss
+how to escalate incidents and communicate
+with stakeholders. And my name is Emily. I'm a
+Program Manager at Google. I'll guide you through
+the final portion of the program and share
+ways that you can engage with the
+security community and prepare for your
+upcoming job search. And, as you already know, I'll guide you through the
+first course of this program. This is such a great time to grow your career in
+the field of security. Sound exciting?
+Let's get started!
+
+There are three categories of sock audit. We have SOC one, SOC two and SOC three, SOC, one, audit test, internal controls over financial reporting. In other words, SOC one audit focuses on testing a service or organization's internal controls related to financial reporting. So two audit addresses operational risk of outsourcing to third parties. The audit test, internal controls related to five key areas, security availability, privacy, confidentiality, and process integrity. Sub two audit often contains sensitive information as a result. The report is not shared widely and when they are shared, they are typically shared under a non disclosure agreement. ND SOC three audit covers similar reporting areas as SOC two but only provides high level information. So it's not as detailed as SOC two and it is designed for public sharing besides the three categories of SOC audits which are SOC, one, SOC, two and SOC three. We also have SOC audit types. There are two types of SOC audit. Taiwan type one, audit simply describes the internal controls the service organization have in place and the auditor provides an opinion on the suitability of the controls. Actual testing is not done on the controls. Type two audit is a detailed testing of the design and operate an effectiveness of a service organization's internal controls over a period. And that's usually 12 months. The auditor provides a detailed report based on the testing results, Suwon Taiwan. This is the testing of internal controls over financial reporting and the auditor's opinion on the suitability of the internal controls at a given point in time. So type two, this is the testing of internal controls over financial reporting and the auditor's report based on the detailed testing of the design and operating effectiveness of the internal controls performed over a period typically 12 months. SOC two. Type one, this is the testing of internal controls around security availability, privacy, confidentiality, process integrity and the auditor's opinion on the suitability of the internal controls at a given point in time. Sub to type two. This is the testing of internal controls around security availability, privacy, confidentiality, process integrity and the auditor's report based on detailed testing of the design and operating effectiveness of the internal controls performed over a period typically 12 months. SOC three does not have a type.

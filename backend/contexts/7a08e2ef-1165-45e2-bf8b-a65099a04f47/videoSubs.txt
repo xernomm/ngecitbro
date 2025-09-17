@@ -1,0 +1,1009 @@
+Windows Defender Antivirus
+
+This reading introduces you to the basics of security features in Windows Defender Antivirus. Configuring and managing Windows Defender Antivirus is a basic component in protecting computer systems from unauthorized access and threats.
+
+Understanding Windows Defender Antivirus
+Windows Defender Antivirus, also known as Microsoft Defender Antivirus, is a robust security solution integrated into the Windows operating system. It provides real-time protection against various types of malware, including viruses, worms, and spyware. This reading focuses on understanding the functionalities, configuration, and management of Windows Defender Antivirus.
+
+Some important functions of Windows Defender Antivirus are listed below-
+
+Real-Time Protection: 
+Windows Defender Antivirus offers several types of scans to ensure comprehensive protection, which includes Quick Scan, Full Scan, Custom Scan, Offline Scan and Schedule Scan.
+
+
+Quick Scan: Allows the user to scan the areas of the system that are most likely to be targeted by malware. This scan is faster but less comprehensive. Here's what it typically involves:
+
+Memory Scan: Checks for active malware in your computer's memory.
+
+System Files: Scans all files and running programs on your hard disk. This scan is more thorough and can take several hours to complete, depending on the size of your drive and the number of files.
+
+Registry Entries: Examines Windows Registry entries that are commonly used by malware to execute upon start-up.
+
+Common Malware Locations: Scans common locations where malware is known to reside, such as the Windows directory and temporary files.
+
+Full Scan: This option thoroughly scans the entire system for threats.
+
+Custom Scan: This option allows the user to select specific files and folders to scan. This is useful if you suspect a particular area of your computer is infected.
+
+Offline Scan: This option allows users to scan the system before the operating system loads to detect and remove persistent threats.
+
+Scheduled Scan: This can be set up using the Task Scheduler to run regular scans at specified date and time to maintain system health.
+
+Exclusions:
+This option allows users to specify files, folders, and processes to be excluded from scans. After a scan is completed, Windows Defender Antivirus provides detailed results, which can be accessed through the Windows Security Center. Actions based on scan results include:
+
+Quarantine: Isolating detected threats to prevent them from harming the system.
+
+Remove: Deleting detected threats from the system.
+
+Allow: Permitting certain detected items if they are known to be safe (adding to exclusions). 
+
+
+Tamper Protection: 
+Tamper Protection is a feature in Windows Security that helps prevent malicious apps from changing important security settings, including real-time protection and cloud-delivered protection.
+
+
+Automatic Sample Submission:
+Automatic Sample Submission is a feature in Windows Defender that helps protect your computer by automatically sending samples of suspicious files to Microsoft for analysis.
+
+
+Regular Updates:
+This option allows users to automatically receive updated Windows Defender Antivirus and virus definitions regularly. To ensure optimal protection, Windows Defender relies on regular updates. These updates include the latest virus definitions, threat intelligence, and software improvements.
+
+Next Steps
+This reading provides you with basic information on Windows Defender Antivirus and Windows Firewall services on Windows Operating System. With this, you can proceed to the Hands-on-labs in the course that provide you a virtual Windows workspace to practically experience and configure the settings.
+
+
+Firewalls
+
+A firewall is one of the most effective methods for securing your network from external threats. In a non-technical setting, a firewall is a physical, fire-resistant wall that is designed to keep a fire from spreading from one area to the next. Similarly, a computer security firewall is a software program or a hardware device that is designed to keep malicious threats from spreading from the public network to a private network or device. Firewalls provide defense against spyware, virus attacks, and hacking. They can also help to ensure that sensitive information is kept private. 
+
+
+Functions of Firewalls 
+Threat Mitigation: Firewalls help prevent unauthorized access and cyber-attacks by blocking malicious traffic.
+
+Traffic Control: They regulate network traffic, allowing only legitimate communication.
+
+Enhanced Security: By setting rules, firewalls protect sensitive data and ensure compliance with security 
+
+Types of Firewalls 
+Software – or host-based firewalls are programs that are installed on a computer. Most modern operating systems have built-in firewall software. Microsoft, for example, provides Windows Defender Firewall. These built-in firewalls help to monitor port traffic and traffic between applications. 
+
+Hardware – or network-based firewalls are deployed between a network and an internet gateway. In-home or small business settings, a router often has built-in firewall protection to stop unwanted traffic from the outside. Larger organizations use separate firewall devices to protect their network. 
+
+ Network Profiles
+The network profiles help tailor the firewall's behavior based on the network's trust level and security requirements.
+
+
+Domain Network: This is a network where the computer is connected to a domain of the company and is typically used in enterprise environments. This allows to apply settings for computers that are part of a corporate or organizational network, allowing for centralized management.
+
+Private Network: This is a network, such as a home or small office network, where the one or more computers can be trusted. Here, a more relaxed security settings can be applied, allowing devices within the same network to communicate more freely.
+
+Public Network: This is a network where the computer is connected in a public place, like a café or airport. This needs a restrictive settings to prevent unauthorized access and ensure maximum security in untrusted environments.  
+
+How Firewalls Work 
+A firewall works by monitoring all incoming and outgoing network traffic. The firewall decides whether to permit or deny the traffic based on a predefined set of rules.  Firewalls can monitor and filter traffic using several different methods. 
+
+Packets are small pieces of data that travel across a network. A firewall that uses packet filtering reviews each packet that tries to access a network or device. Any packets that match known threats or that have been explicitly denied are removed and all other packets are sent through to their destination. 
+
+Stateful inspection, also known as dynamic filtering, monitors the state of active network connections.  It relies on patterns to analyze and monitor traffic for potential threats. 
+
+A proxy firewall serves as a go-between for the requesting system and the internet. Information is first sent to the proxy service before it is forwarded to its destination. 
+
+Filters - Controlling Network Traffic
+Firewalls can be configured to meet the specific need of an individual or organization.  The Inbound and outbound rules in Windows Firewall control the traffic allowed into and out of your computer, respectively. Traffic can be approved or denied based on IP addresses, ports, domain names, and even specific words and phrases. These ensure that only authorized traffic is allowed while unauthorized or potentially harmful traffic is blocked.
+
+Before you configure your firewall, it is important to create a plan. In many cases it’s best to deny all traffic except what is allowed. Rules that are too strict can limit important user functionality. However, rules that are too loose can put your network at risk, so it’s usually easier to add approved access than it is to recover from a breach that happened because of loose firewall rules. The more rules there are, the longer the firewall takes to review the traffic, so you’ll want to try to keep a lean, but efficient set of rules. 
+
+Inbound Rules
+Inbound rules control the incoming network traffic to your computer. These rules help protect your system from unauthorized access and attacks by specifying which types of incoming connections are allowed or blocked.
+
+Outbound Rules
+Outbound rules control the outgoing network traffic from your computer. These rules help manage what data leaves your computer and ensure that only authorized applications and services can send information.
+
+
+Next Steps
+This reading provides you with basic information on Windows  Firewall services on Windows Operating System. With this, you can proceed to the Hands-on-labs in the course that provide you a virtual Windows workspace to practically experience and configure the settings.
+
+Video transcripts:
+
+Welcome to “Security Threats: Access
+Control, Authorization, and Authentication.” After watching this video, you will be able to: Define each authentication factor, explain how digital accounting is used, and identify the four methods of non-repudiation. There are three processes involved in
+logging in to a network or account. Access Control – limiting or granting access
+to different areas based on user status. Authorization – giving permission to access
+a computer, network, app, or account, and Authentication – proving it’s you
+with a password or other credentials. Access control prevents unauthorized
+viewing, modification, or copying of data. IT staff use access control
+to restrict what users can do, which resources they have access to, and
+what functions they are allowed to perform. Access is granted using
+the rule of least privilege where access is only granted to resources
+that a user needs to fulfil their role. Role-based access control (or RBAC)
+follows a company’s org chart. Different customer and employee roles
+are set up as groups on a network, and then those groups are
+granted certain permissions. When a new user joins the network, they are
+assigned to the group that fits their role. They will have the lowest level of
+permissions they need to do their job. Authorization is when you have permission
+to access a location or do an action. Before you can access an account
+or system, you need authorization. Access control must be set up before any authorization is granted
+to maintain data security. And authorization must be set up for your
+user account before you’re able to log in. Once you are authorized, you can
+then use authentication to log in. Authentication is the act of
+confirming the identity of a user. Authentication involves two steps:
+entering the correct login information and confirming that it is really you. Authentication factors used
+to confirm identity include: Something you know (like a username, password,
+PIN, or answers to security questions), Something you have (like a mobile
+device, security key, or security badge), And something you are (biometrics like
+facial recognition or a fingerprint, iris, or voice scan). Authentication methods include
+single-factor (or SFA), two-factor (or 2FA), muti-factor (or MFA), and single sign-on (or SSO). SSO lets you log in to multiple
+applications and platforms with one login. 2FA and MFA are the most secure ways to log in because they require at least
+two authentication factors. Access control sets boundaries,
+authorization gives access, and authentication confirms identity. In the Security field, it’s important to
+know the right balance between the three A’s: Strictly applying role-based
+permissions groups won’t secure data if those groups all have the
+same authorization levels. The same is true if groups
+have properly set permissions, but are not properly applied by administrators. Using strong passwords and MFA won’t secure
+data if all groups have the same permissions. The same problem exists if groups have properly
+set permissions, but passwords are weak. Using strong passwords and MFA won’t secure data
+if all users are assigned to the same group. The same problem exists if
+administrators assign users to the proper groups, but passwords are weak. Best practice should require
+strong authentication, strong authorization, and strong access control. Digital accounting is used in troubleshooting,
+security analysis, forensics, and hacking. Logs: Most software and systems generate audit logs. Audit logs capture log file events which
+can show who did what and how the system behaved. Tracking: Websites can track your OS, browser
+version, installed extensions, screen resolution, installed fonts, time zone, language, and how
+long you spent on a site and what you did there. Cookies: A cookie is code used to track, personalize, and save information
+about your browsing session. Cookies can also be used to ban you from a website
+if you've violated any of its conditions for use. Browsing history: is a list
+of recently visited websites. Anyone with access to your device
+can see what sites you visited. Attackers use browsing history to learn
+where they might impersonate their victims, and companies use it to see which
+sites you go to on your work computer. Non-repudiation is when you can't
+deny being in a specific location. It guarantees that a message sent
+between two parties is genuine. Like a digital signature. It includes: Video: Clear recordings of a person
+entering, leaving, or occupying a space Biometrics: fingerprint or iris
+scans can confirm whether a person physically accessed a device, network, or area. Signature: When a signature is used
+in conjunction with a hardware token, it becomes a digital signature.
+This authenticates the signer. And receipt: A digital receipt proves that a
+message was sent from one party to another. In this video, you learned that: Role-based access control (RBAC) uses network
+groups with different permissions levels. The methods of authentication are
+single-factor, two-factor, and multi-factor. Authentication factors are something you know, something you have, something
+you are, and somewhere you are. Logs, tracking, cookies, and browsing history are used to troubleshoot and to
+uncover user activity on devices, and non-repudiation uses video,
+biometrics, signature, and receipt.
+
+Welcome to “Security Threats: Validation
+and Device Usage.” After watching this video, you will be able
+to: Explore device use best practices. Identify reputable driver and firmware sources,
+and list the do’s and don’ts of keeping your
+devices safe. To reduce security risks, always be sure to
+get your software, cloud services, device drivers, and firmware updates from legitimate
+sources like: Vendor app stores – like the Windows Store and
+Google Play Store. Authorized resellers – like Best Buy and
+Costco. Original Equipment Manufacturers (OEMs) – like
+Dell and Samsung. Software Manufacturers – like Adobe and
+Microsoft. If you’re downloading purchased software
+from a website, check the URL to ensure it begins with HTTPS. Click the lock icon in the URL bar to see
+if the certificate is still current and who owns it. Avoid pirated software torrents, they’re
+loaded with malware. Avoid software from untrusted sources. Avoid jailbreaking or rooting your phone. Non-approved apps are untested and could contain
+malware. Original equipment manufacturers (or OEMs)
+provide drivers and firmware updates on their websites. Dell, HP, Samsung, Nikon, NVidia, and more
+all provide downloads for device drivers and firmware updates for the products they build
+and sell. Avoid 3rd party sites that claim to host drivers
+for the latest devices. These may be malware traps. There are some third-party sites that host
+legitimate obsolete drivers for obsolete hardware that a manufacturer no longer supports, but
+use these sites with care. Research them and check forum reviews to ensure
+they aren’t malicious. Device driver software should also be digitally
+signed by the vendor, and the vendor's certificate should be trusted by your computer. Uninstall software that you don’t use or
+don’t want. New devices may come pre-loaded with unwanted
+trial software, commonly referred to as bloatware. Aging bloatware is soon outdated, and may
+have vulnerabilities. The same is true for software you no longer
+use. If you need an app in the future, download
+it from the software manufacturer’s website to ensure it is legitimate and up to date. Then enable automatic updates to keep the
+application safe. New attacks and malware are released onto
+the Internet daily. This makes anti-malware, and VPN
+services a must for all your devices. Microsoft's Windows Defender protects your
+computer against viruses and malware, free of charge. It also integrates with the built-in firewall
+that comes with the Windows operating system and is enabled by default. However, Windows Defender does not perform
+VPN functions. Some third-party antivirus software such as
+McAfee, BitDefender, or Norton can be purchased for a reasonable cost if that is your preference. They may disable Windows Defender and Windows
+Firewall during their installation process, which is completely normal. Many reputable antivirus companies provide
+malicious software removal tools for free, including Microsoft. They always have the latest virus signatures
+and are very effective. Just pick the one you like, download, and
+scan. It will automatically remove any malware it finds. If the tool doesn’t resolve your issues,
+you may need a PC technician who can assist you further. Prevent malware infection with safe computer
+usage and browsing techniques. Don't visit questionable websites or HTTP
+sites. Don't download from filesharing sites, as
+they have loads of viruses. Don't insert used or unknown disks, storage,
+or USB devices into your computer. Don't click links or file attachments from
+emails or messages – even if you know the sender. Do use good anti-malware software on all of
+your devices and keep them up to date. Do use up-to-date firewall and VPN software
+on any devices you go online with. Do visit encrypted, HTTPS sites. Do use OEM or authorized reseller sites when
+downloading software. Do reduce accounts that have elevated privileges
+like admin, superuser, or root roles. In this video, you learned that: Apps, device drivers, and firmware should
+come from reputable sources. Rooting or jailbreaking makes devices vulnerable. Apps from filesharing sites are loaded with
+malware. Old apps and bloatware leave devices vulnerable. Malicious file removal tools are available
+for free from reputable antivirus companies, and automatic updates and antivirus, firewall,
+and VPN software keep devices safe.
+
+This video is a fun scenario to try and teach you something a little bit about malware. In this video, I'm
+a bad actor, has recently gotten in to
+mining cryptocurrencies. However, the system I have right now is not ideal
+for crypto mining. However, I know if I had multiple systems working
+for me as a group, then that would be
+way more efficient. Unfortunately, I don't have the resources to buy
+all of those systems. But why would I need to buy them if I could just use
+other people's systems? What I'll do is
+I'll have a malware infect those systems and have them all use resources for
+me to mine cryptocurrencies. Now, how do we go about that? Well, one thing to consider is that we want systems
+with good GPUs. Which demographic
+has the best GPUs? Gamers. Luckily, I also
+just graduated from university and I have all of my former engineering
+classmates emails. I know that a vast majority
+of engineers are all gamers, so boom, I have my targets. Now, what kind of malware would I use to
+do something like this? I know there's
+everything out there, from viruses to
+worms to Trojans, but what we'd actually described here is considered a botnet, to where there's multiple
+infected systems working for me under one
+controlled priority. This is not known to the
+owners of these systems, so it's working in
+the background. After a quick Google search, I found some botnet
+code on GitHub that was listed for educational purposes. Luckily, it's perfect for
+what I'm trying to do. We have the malware, how do we get it onto our
+victims' systems? Now, this part is going to take a little bit of
+social engineering. For this, we know that the victims are all
+engineering students. What I'll do is I'll
+hide the malware in a PDF file that seemingly contains pages to a textbook for one of
+the required classes. Then I'll create
+various email accounts with names similar to that of the professors
+for that class, and construct emails
+that sound friendly, like, "Hey, hope you're
+having a good summer. Look forward to seeing
+you in the fall. Here is the required textbook
+for this specific class. I know that textbooks
+can get pricey, so here's the PDF." Then if a student downloads
+the PDF and opens it, then the botnet code will
+start to install itself and start using the computer's
+resources in the background. If I repeat this process for
+all of the major classes, then now I have thousands
+of potential victims. I send out the emails, and sure enough I start getting bots to show
+up on my botnet. The crypto mining
+operation has begun. Soon, however, one of my
+victims realizes that they cannot run their games without severe
+performance drops. They get a malware
+protection service to scan their device. Since I'd found my code online, the protection
+software was easily able to recognize it and
+remove it from their device. Then later, another student who already had malware
+protection on their device, had the service automatically scan the PDF before
+they downloaded it. Sure enough, it spotted the
+malware and notified them. Then the student notified the school about it,
+and sure enough, my mining operation
+began to deteriorate, as more and more students
+were removing it from their devices and preventing other students from downloading
+it in the first place. Then one smart student in particular knew
+about the malware, found that it was
+on their device, and then tracked me down by
+analyzing the device and the bots connection to the botnet and found me
+fairly easily through that. Needless to say, it did
+not work out for me. In general, advice I'd
+give for everyone is, one, to keep your
+devices updated. There's always known
+vulnerabilities coming out, and so keeping your devices
+updates helps mitigate the risk of people exploiting vulnerabilities that
+have just come out. Next, use malware
+protection software. Last, don't be a bad guy. If you're going to
+be a bad actor, know what you're
+getting yourself into. If you're going to take away
+anything from this video, know that malware is
+malicious software, two, follow the advice, and three, don't go downloading files and executing them without
+knowing the source.
+
+Welcome to this video on safeguarding against
+malware attacks. After watching this video, you will be able
+to define malware, explain the methods to
+prevent malware attacks, outline ways organizations
+can enhance malware defense. Malware refers to
+malicious software that specifically created with the intent to disrupt or gain unauthorized access to
+a system or network. Malware can take diverse forms, such as ransomware,
+adware, viruses, trojans, spyware, worms, and so on. Malware presents a critical
+and persistent threat to individuals and organizations
+across various sectors. Its constantly evolving
+nature and the ability to infiltrate systems,
+steal sensitive data, disrupt operations, and compromise
+security underscores the need for robust
+preventative measures. Preventing malware
+attacks requires a multilayered
+approach to security, encompassing both
+technical solutions and vigilant user behavior. Let's explore the practices
+and strategies to fortify our systems
+against malware threats. Begin by ensuring that operating systems and
+software are up to date as the discovery of
+security weaknesses often results in the release
+of security patches. If left unaddressed, these weaknesses could serve
+as entry points for malware. Users and network administrators
+can effectively close potential vulnerabilities
+by staying current with these updates. This proactive approach will significantly reduce the risk of compromised systems and minimize the potential for data breaches. Another preventive
+measure is to use reputable antivirus and
+antimalware software. These solutions provide a
+crucial line of defense by actively scanning for and
+removing malicious threats. In addition to scanning
+for known threats, modern antivirus and antimalware software
+employ heuristic analysis. This advanced
+approach detects new, previously unknown
+malware by analyzing patterns and behaviors
+akin to known threats. In addition, this software
+often quarantines suspicious files and
+monitors system changes that could indicate the presence
+of a malicious program. Antivirus and
+antimalware software frequently include
+features designed to prevent malware
+from executing. It offers real-time protection, actively blocking malware before it can affect the system. Malware databases are
+also regularly updated, ensuring they can recognize
+and defend against the latest threats
+as soon as they are identified in the
+cybersecurity community. Next, to prevent
+malware attacks, it is crucial to create strong
+and unique passwords for all accounts using a password
+manager when necessary. Implementing two-factor
+authentication enhances security, making unauthorized
+access more challenging. In addition, implementing multi-factor
+authentication (MFA) significantly enhances
+account security by requiring multiple verification
+forms before granting access to an
+account or a system. This security measure often combines two or more
+forms of verification. Typically, MFA combines something the user knows
+like a password or PIN, with something the user has, like a smartphone application or hardware token that generates time-sensitive
+codes or something the user inherently is, like a fingerprint or
+facial recognition. So even if a password
+is compromised, MFA acts as an
+additional barrier since the attacker would still need the second or third
+form of identification, which they are much
+less likely to have. Next, you must exercise
+caution when clicking emails and downloads
+because they often serve as
+carriers for malware. An attachment that appears to be a benign document or a
+legitimate download link could contain harmful
+software that infects the system once
+opened or executed. Hence, never open
+email attachments or click links from unknown
+or untrusted sources. Always verify the
+sender's email address, as cybercriminals often
+spoof addresses to appear as coming from a legitimate contact
+or organization. If you're uncertain about the
+authenticity of an email, reach out to the sender through a separate communication
+channel for verification. You can also set up
+email filters and modify the security settings
+of your email to flag or block
+suspicious emails. Additionally, ensure
+downloads are only initiated from
+trustworthy websites. Always look out for indicators
+of website security. The appearance of https:// in the URL and a lock icon in the address bar signify that the connection is
+encrypted and secure. Businesses and
+organizations should also consider implementing an
+email gateway that scans incoming communications for
+threats and training users on recognizing and
+handling potentially dangerous emails
+and attachments. Also, it's crucial that individuals and
+businesses conduct regular data backups to ensure recovery during
+a malware attack. Consistent, incremental
+backups that allow for restoration to
+specific points in time can significantly mitigate
+the damage caused by ransomware or other
+destructive malware. The last, and perhaps
+the most important, method for preventing malware is to educate all users about the warning signs of malware and the best practices
+for cybersecurity. Such user trainings can
+dramatically reduce the risk of accidental malware
+introduction into systems. In this video, you
+learned that malware or malicious software is aimed at system disruption and
+unauthorized access. There are diverse forms of malware: ransomware, adware, viruses, trojans, spyware,
+worms, and so on. There are seven ways to
+prevent malware attacks. Update OS and software, install a trusted antivirus, ensure password security, exercise caution with emails, exercise caution with downloads, back up data, and educate users. Organizations can prevent
+large-scale attacks by implementing an e-mail
+gateway and training users.
+
+While some parts of software
+features are exposed, a lot of attacks depend on
+exploiting bugs and software. This triggers obscure and
+unintended behavior, which can lead to a compromise of the
+system running the vulnerable software. These types of vulnerabilities can be
+fixed through software patches and updates which correct the bugs
+that the attackers exploit. As an IT support specialist, it's critical that you make sure that you
+install software updates and security patches in a timely way in order to defend
+your company's systems and networks. Software updates don't just improve
+software products by adding new features and improving performance, and stability. They also address
+security vulnerabilities. There are some software bugs that
+are present in the core functionality of the software in question. This means that the vulnerability can't
+be mitigated by disabling the vulnerable service, not good. An example of this was
+the heartbleed vulnerability. A bug in the open source TLS library,
+open SSL. This was discovered and
+widely publicized in April of 2014. The bug showed up in how the library
+handled TLS heartbeat messages. Their special messages that allow one
+party in the TLS session to signal to the other party that they like
+the session to be kept alive. This works by sending a TLS
+heartbeat request message, a packet that has a text string and
+the length of the string. The receiving end is supposed to reply
+with the same text string in response. So if the heartbeat request
+message contains the text, I'm still alive and the length of 15, the receiving end would reply back
+with the same text, I am still alive. But the bug in the open SSL library was
+that the replying side would allocate memory space according to
+the value in the received packet. This was based on the specified length
+of the string like it's defined in the packet, not based on
+the actual length of the string. The value was not verified. This meant that an attacker could
+send a malformed heartbeat request message with a much larger length
+specified than what was allowed. The reply would contain
+the original text message, but would also include bits of
+memory from the replying system. So an attacker could send a malformed
+heartbeat request message containing the text I'm still alive, but with a length of 500 because
+the length value wasn't verified. This means that the response back
+would be I'm still alive followed by the next 485 characters in memory. So it was possible for an attacker to read
+up to 64 kilobytes of a target's memory. This memory was likely used
+before by open SSL library, so it might contain sensitive information
+regarding other TLS sessions. This bug meant that it was feasible for an
+attacker to recover the private keys used to protect TLS sessions, this would allow
+them to decrypt TLS protected sessions and recover details like login credentials. This is a great example of a mistake in
+the code leading to a very high profile software vulnerability. It could only be fixed or
+a software update or switching to a different
+TLS library entirely. While the heartbeat functionality
+is enabled by default, it's possible to disable it
+in the open SSL library, but it wasn't a simple argument
+to pass to an application. Disabling this functionality required
+compiling the library with a flag that was specified to disable heartbeats, then you had to replace the installed
+version with the custom compiled one. That's not something most people will do. This was also a library wildly used
+by both server applications and client applications. This means that it might not be possible
+to replace the open SSL library with a customized version or
+a different library. The only way to address the vulnerability
+and client software that implemented open SSL was to wait for a patch from
+the software vendor, what a mess? Here's the bad news. With software continuing to
+grow more complex over time, these types of bugs are likely
+to become more commonplace. Attackers will be looking for
+exactly this type of vulnerability. The best protection is to have a good
+system and policy in place for your company. The system should be checking for,
+distributing and verifying software updates for
+software deployment. This is a complex problem when considering
+a large organization with many machines to manage that run a variety
+of software products. This is where management tools can help
+make this task more approachable for you. Solutions like Microsoft SCCM or
+Puppet labs, Puppet and factor tools allow administrators to
+get an overview of what software is installed across their
+fleet of managed systems. This lets the security team analyze
+what specific software and versions are installed to better understand the
+risk of vulnerable software in the fleet. When updates are released and
+pushed to the fleet, these reporting tools can help make
+sure that the updates have been applied. SCCM, even has the ability to force
+install updates after a specified deadline has passed. Patching isn't just necessary for
+software, but also operating systems and firmware that run on
+infrastructure devices. Every device has code running on it that
+might have software bugs that could lead to security vulnerabilities from routers,
+switches, phones, even printers. Operating system vendors usually push
+security related patches pretty quickly when an issue is discovered. They'll usually release security fixes
+out of cycle from typical OS upgrades to ensure a timely fix,
+because of the security implications. But for embedded devices like network and
+equipment or printers, this might not be typical. Critical infrastructure devices should
+be approached carefully when you apply updates. There's always the risk that a software
+update will introduce a new bug that might affect the functionality of the device or if the update process itself would
+go wrong and cause an outage. I hope you can see the importance
+of applying software patches and firmware updates in a timely fashion. It would be pretty embarrassing if
+you wind up being compromised by a vulnerability that could have been
+easily fixed with a software update.
+
+Imagine this scenario. You're playing your favorite video game
+and you finally get to the big boss. You spent countless
+hours finding this boss, neglecting all other responsibilities,
+like your job, school, even hygiene. That's pretty gross, but I get it. So you're right about to kill the big boss
+when suddenly your game console shuts off completely. You probably freak out for a second. But then you remember it's okay, you saved
+the game before the boss came along. So now you can turn it back on and
+you'll be at the same spot. But then your console shuts off again. This happens over and over. You like most people are devastated. You into a fit of rage, but then just
+before you toss your console out, you make one last dish effort and
+yell, tell me what's wrong with you. Suddenly you hear a faint voice
+telling you what you want to hear. Wouldn't that be amazing? Sure, that scenario was a bit exaggerated. But my point is that our computers
+actually can talk to us and tell us what's wrong. Maybe they won't whisper answers to us,
+but they speak to us in the form of logs. Logs or files that record system events on
+our computer, just like a system's diary. A computer will record events like when it
+was turned on, when a driver was loaded. And even when something isn't working
+in the form of error messages. In all operating systems, logs are kept so we can refer back to them when we need
+to find out something that happened. But logs can be hard to navigate because
+our computer will essentially record everything. Here's what a log looks like. As you can see, it can be tough
+to make your way through a log. But with a little bit of elbow grease, we can figure out what happened on our
+computer and piece together a solution. Unfortunately, our computers, cars and
+machines don't have a little voice that tells us what's wrong
+when there's a problem. But by the end of this program, you'll
+be able to navigate and read logs so you won't even need it.
+
+We've covered the kernel's
+major responsibilities. Now, let's discuss the final major aspect
+of an operating system, how humans interact with it. This is what we
+call the userspace. When we interact with
+an operating system, we want to do certain functions like creating files and folders, open applications, and deleting
+items, you get the idea. There are two ways that we
+can interact with our OS. With a shell or graphical
+user interface. There are also some shells that use graphical user interfaces, but we'll work with a
+Command Line Interface or CLI shell. For the most part, this just means that we'll
+use text commands. A Graphical User Interface or GUI is a visual way to
+interact with the computer. We use our mouse
+to click and drag, to open folders, etc. We can see everything
+we do with it. You probably use a GUI every day without realizing
+you're using one. To watch this video,
+you probably used GUI clicking icons and navigating menus to open your web browser and
+navigate to the website. People usually
+recognize a device or product based on its GUI. You might be able to
+spot the difference between a computer running Microsoft Windows or Mac OS based on the design
+of the windows, menus, and icons, you've probably seen GUI's and other places too, like mobile phones and tablets, ATM machines, and
+airport kiosks. A shell is basically a
+program that interprets text commands and sends
+them to the OS to execute. Before we had fancy
+visual interfaces, commands like create a
+file had to be typed out. While we have GUI is today, the shell is still commonly
+used to run commands, especially by power users. Power users are above
+average computer users. Linux, especially, it's
+essential that you actually know commands,
+not just a GUI. This is because most of them
+Linux machines you interact with in IT support will
+be accessed remotely. Most of the time, you
+won't be given a GUI. There are lots of different
+types of shells. Some have different features, some handled performance
+differently. It's the same concept behind
+different operating systems. For our purposes,
+we'll just be using the most common shell,
+Bash or bourne. Again, shell in Linux,
+you might be thinking, but it's easier for me
+to navigate a GUI than it is to use commands
+to do the same thing. Why would I want to learn both? I can't stress this enough. It's vital for you
+to know how to use a shell in an IT support role. Some tests can only be
+completed through commands. In more advanced IT roles, you might have to manage
+thousands of machines. You don't want to have to click
+a button or drag a window on every machine when you
+can just run a command once.
+
+So you've just logged into
+your Linux server and there is no graphical user interface. How are you gonna use that Command
+line Interface, join us to find out. &gt;&gt; You're watching ITproTV. [MUSIC] &gt;&gt; Hello everybody, thank you for tuning
+into more of the CompTIA Linux+ show. And we're gonna be talking about something
+that if you are a first time Linux user might be a little scary. And that's the Command Line Interface but
+don't worry. We got Don Pezet out here to help us out. Don what can some of our
+viewers expect in this episode? &gt;&gt; Well, we're gonna be focused
+on the Command Line interface. And we'll start off with just what it is,
+get a chance to see it and experience that. And then we'll talk about how to
+interact with the Linux operating system using the Command Line Interface. You'll find that most desktop operating
+systems are using GUIS these days, but if you're on a server,
+you're not gonna have one. So you need to know how to
+interact with the system simply by typing commands into a row. &gt;&gt; So how do we actually access
+the Command Line if we need to? &gt;&gt; Well, if you've been
+watching all of our episodes, you've already seen the one on terminals. Most systems come with a terminal
+of some sort or another. And when I say most systems,
+I mean Windows, Mac, OS, Linux. Pretty much every operating system
+features a terminal of some sort. Now it may be Linux compatible it may not,
+but in this series we're
+focused on the Linux side. So regardless of what distro you install,
+if it's Red Hat enterprise Linux, Ubuntu, Almas, CentOS, whatever it is that you
+install, it's got a terminal available. At a minimum, it has a full text based
+Command Line Interfaces available. Even if you have no
+graphical user interface, you have to sit down directly in front
+of the computer to be able to see that. But if you have a GUI then you have
+a softer application as a terminal that you can launch like Xterm,
+GNOME terminal and so on. And when you launch those, like I'm
+gonna launch my GNOME terminal here. When I fire that up, it then shows
+me the Command Line Interface. The Command Line Interface is
+actually running in the background, the terminals job is to show it to me. And regardless of what terminal I use, I'm going to see a prompt
+that's similar to this one. The prompt is actually being generated
+by the CLI or as part of the CLI, the terminal doesn't determine that. In fact, the terminal controls everything that's
+outside of this main black area here. All the texts displayed
+that's controlled by the CLI. And the prompt usually
+looks something like this, where it has your user name and
+the name of the computer that you're on. Because you might be promoted
+into more than one computer, so you have to keep track of who
+it is that you're working with. And then you'll see a couple of
+characters and these characters can mean different things,
+depending on how your system is set up. Mine is showing me two main things. The first thing is this tilled symbol, which lets me know that I'm
+currently in my home directory. I'm in my personal directory
+on the filesystem. And the second thing is that $. The dollar sign lets me know that I'm
+a regular user, not an administrator. If I was an administrator, I would
+have a pound symbol there instead or a hashtag for our younger audience. So, it would be one or the other. Your prompt may look
+a little bit different, but at the end of the prompt you
+should have a cursor like this, which is letting you know that
+you're ready to type a command. And so I can start typing, that's me interacting with
+the terminal as I type in a command. So that's basically what we expect to see. When we talk about
+accessing the Command Line, it's usually as simple as just
+opening up your terminal program. &gt;&gt; Question about consistency
+across Linux distros, when it comes to the CLI are they
+the same across the distros? &gt;&gt; They're pretty darn close. Whatever terminal you use and
+whatever command line it is or the shell that you're accessing,
+they try to be compatible. An application needs to be able to
+run across different systems, but that doesn't mean they're the same. In fact, many distros use
+different shells altogether. Now I don't think I've used the word
+shell prior in this episode. So the shell, is what's actually
+generating this interface. So when we say Command Line Interface,
+that's a real general term. Command Line Interface that could
+apply to Microsoft's command prompt. And that's very different
+than what I'm seeing here. But when we talk about the Linux shell,
+the Linux shell is the actual binary, the program that is running,
+that's creating this interface. And you can you can usually
+see it a few different ways. There's the ps command, which shows the
+processes that are running on your system. And that will typically show you, like if
+you just open up a terminal like I did and run PS, you'll see two processes. One is, well, pS because I just ran that. I ran the process list. But then the other one is
+whatever shell I happen to be in. I'm in the bash shell. Bash stands for the Bourne again shell. And Bourn is spelled BOURNE because is
+the last name of the person who wrote it. There are a ton of different
+shells that are out there. The original unique shell, which is
+called sh for shell, there's only one. They didn't need to differentiate it. Later on, it changed and they named it the C shell which
+was actually a bit of a joke. C shell like what you'd find
+at the ocean or on the beach. But it was the letter C because it was
+done in the C programming language, so the letter C shell. Your system may have that,
+you may actually look and see that you're just running sh. BSD systems tend to use Z sh,
+Z shell which is a slight variation. And there's a few others in Ubuntu. We actually have the dash
+shell which is designed to run parallel tasks
+a little more quickly. So each one has different
+features that differentiated but as far as function,
+it basically works the same. And let me just give you an example here,
+I can just type dash and now I'm in the dash shell. Very exciting, my prompt changed. My prompt practically went away. I just have a dollar sign and that's it. So I'm in this different shell environment
+but it still works the exact same way. I can come in and type pS, I can see
+the dash is now running that I'm in it, I can execute commands. So it functions the same way even
+though it's a different shell. And if I were to try other
+shells actually don't know what all shells I have installed. Let's see, I don't have Z sh installed. Probably have sh. So if I just run the old,
+the C shell, I can take a look and see that I'm now in sh. Again functions basically the same. I can come in and
+type commands works just the same. I can type exit, spell it right, exit to
+get back there and now I'm back to mine. So three different shells, I just showed
+you they all function the same even though they might look slightly different. Now we've seen you execute a couple of
+commands since we've been in this episode, but a little more specifics here. How you execute commands
+inside of the shell? So the ones I've done were
+really simple commands. I just typed a command and did something. When you run a command,
+you're executing a binary. A binary is a file on the hard drive. And a file normally contains things
+like text, documents, pictures, the junk we use on a regular day. But a binary is different,
+that's a program. A program that needs to run and
+do something. And so from the command line were
+typically invoking binaries. We're asking the system to do something
+and it needs a binary to do that. So when I type pS, well, there's an actual
+program on the system called PS. And that's running and
+it's doing something, what it's doing is displaying
+the list of processes on my system. Now, when I run that it just does it,
+some commands are like that. We type a command,
+it's one thing and that's it. It just doesn't. But other ones we might need
+to manipulate a little bit. We might need to pass arguments and
+options. Arguments and options are ways that we
+change the way that a command functions. And I'll give you an example here,
+let me use Euni as an example. Euni is short for eunuchs name. In the old eunuchs days, there were several different types
+of UNIX operating system available. And so if you wanted to quickly find out
+which version of UNIX you were running, you'd use the U name command. Well, it works under Linux as well and we can find out a little bit of
+information about our Linux kernel. if I run uname by itself,
+it just returns that, I'm running Linux. All right,
+well I kinda already knew that, right. Because I installed this system, but
+maybe maybe that's enlightening. Maybe I didn't even know
+I was on Linux now. I know all right, but I'm not on BSD. Great, well, I want some more information. Tell me a little bit more,
+I wanna know the version of the kernel. Well, it's not telling me that, but it has some command line
+modifiers that I can provide. I can say uname- a dash
+lets it know that hey, I'm about to give you a option. An option to change
+the way you function and then the letter a is the option I'm giving
+it and in this case a is short for all. Show me all of the data that you can
+show me and when I run that now uname, return something different. Yeah, it tells me I'm on Linux, right. It already told me that, but it displays
+me a lot more information here, including the kernel version. I now know that I'm running
+5.13.0 released 39. I can see that I'm actually
+running Ubuntu, so now I know exactly which
+kind of Linux I'm running. I can see the date in UTC and I can see my
+architecture, I'm on an arm processor so I can see that all listed right there. So I know a heck of a lot more about my
+system, thanks to just adding that- a and you'll see a lot of commands do that,
+like ls. Ls is a listing, list the files
+in the directory that I'm in, when I run ls I get a listing of
+the files there they are, right. All just kind of listed by name,
+very incredibly exciting. Well I can ask it to do a little bit more,
+maybe I don't just want this listing, I also want the file sizes. I wanna know how big some files are, I
+could run ls- l to give it a long listing, and the long listing shows
+me a lot more information. We're gonna see this in later episodes. I see all the file permissions. I see the file sizes. These are all folders so
+they all have the same file size but I see additional information
+that I didn't have before. Thanks to adding- l. And there's even another option
+I can add [COUGH] which is- a. Show me all files including hidden ones. If there's hidden files,
+I wanna see those too. And when I run that now
+I see a lot more files. All right, well in Linux when you have
+command line options like this, when you have more than one, you can actually
+combine them instead of doing- l and- a. I could just say- l a and
+it would combine those two together. And now when I run it I get that same
+output right, comes right out and I can even flip them around, let me flip them
+and do a l instead same output, right. So a lot of flexibility there and how we
+wanna provide those, those are options, arguments are a little bit different. Arguments don't have a dash before them. They have some extra information
+that we need to provide. An example of that would be
+like the shutdown command, I could say I wanna shut down and
+I could say- h. Which means halt the system
+actually powered off. Some systems will shut down but they stay
+on that they're just kind of frozen. Halt means I actually wanna cut power. Well the next thing I need
+to provide is when to do it. I can provide that as
+a time mortgages type now, now is the argument shut down- h. That tells it what I wanna do,
+I wanna halt. The system now,
+tells it when I want to do it and the command won't actually
+work without a time. I think it does actually have
+a default time that'll feed in but it will complain unless I tell you
+what that time is going to be. Some commands will not work without their
+argument, other commands will other commands will have a default that
+they just assume and that'll be it. Like if I type reboot by itself,
+It'll reboot right now, that's fine. Or I think in 60 seconds or I can tell it
+reboot now and it'll know to go ahead and do that reboot right away. So options and
+arguments aren't always required but you'll see them frequently as
+we go through this whole series. We're gonna learn about
+a lot of commands and we'll see a lot of different options and
+arguments. &gt;&gt; You mentioned the list command ls. And that's a very common command and
+good to have in your, in your as a tool. But are there some other common commands
+that our viewers should be aware of. &gt;&gt; You're gonna pick up on them
+as you watch this whole series. You'll see there's some commands that I
+run just about every single episode but at a high level,
+let me just run through a few. Ls really handy, pulls up a listing of the files in the
+directory that you're currently in, right? So that's a convenient one to have,
+I've got a lot of folders in here. If I wanna make my own folder,
+like I wanna create a folder called books. I would type mkdir Books,
+that's make directory. And if I do an ls I can see that I now
+have a directory called Books that's been created. So mkdir is a good one, cd,
+cd is changed directory. This allows me to move into another
+folder right now I'm in my home folder if I type cd Books and it is case
+sensitive so I had to do a capital B. Since I made it with a capital B. Now I'm in the Books folder, see how my
+prompt changed it now says tilled / Books. The tilled means my home directory slash
+Books, I'm now in the Books folder and if I pull up a listing here it's
+empty because I just made it. So there's nothing crazy in there,
+I can make something real quick. I could use the touch command. Touch lets you quickly create a file,
+so maybe I'm writing a novel so I'm gonna create I'll say touch novel.txt. And now when I do a list I've got
+novel.txt sitting right there. Another really cool and
+I mentioned in my home directory, where is my home directory? Well you can type pwd that's
+present working directory. Show me or sorry, print working directory
+is actually two different ones. The present, which is mean
+whichever one you're in right now. But pwd works a little bit weird, so
+it's print the working directory. I wanna show the directory that
+I'm currently working in and when I run that I don't get tilled /
+Books tilda is actually a shortcut that represents where my home directory is. Instead it shows me the whole thing
+I'm in / home / administrator / Books. If I use the cd command to move
+somewhere else, I'll type cd / etc. All right well now I'm
+in the etc folder and if I start navigating into other folders
+like if I do an ls and see some folders, I see them so I'll do cd them, see how
+I'm getting into these nested folders. I'm getting deeper and deeper and deeper when I type pwd it
+shows that I'm in /etc /vim. So it's an easy way to keep
+track of where you're at. Some other commands,
+well actually let me show you cd. So I use cd and I typed a folder name and
+so that moved me into that folder, right? Watch what happens when
+I run cd by itself. If you run cd with no arguments when
+you run that it takes you back to your home directory. See now I'm back in / home /
+administrator so I can quickly jump back. You'll see me do that really frequently
+I wanna get back to my home directory. Just type cd, I can also type
+cd / home / administrator /, well I guess that would be a / home /
+administrator that would get me there or I could type cd tilled
+that would work as well. All of those would get me
+back to my home directory, it's up to me which one I wanna use. So these are all common commands
+that we use, they're nice to have. It's gonna be up to you, you know which
+ones you actually use the most frequently. &gt;&gt; I use text editors a lot but I'm
+using them in graphical user interfaces. Now I'm gonna throw myself a curveball
+because if I'm in a command line interface how do I modify or even view files? &gt;&gt; You've got choices there's a lot
+of choices out there in the G U I, you would just browse to
+wherever the text file was. Just double click it right, now you open
+it and you're in but let's say I wanna write my novel so I'm gonna do cd
+Books to get back into that folder and I can see novel.txt right there. If I wanna just view the file there's
+a few ways that I can do that. I'm gonna dump some text in that file so
+I've got some output or here you know what,
+I'll use something else. Let's do dmesg, so dmesg shows everything that happened
+when my system was booting up, right? So when I run that it dumps
+a lot of stuff to my screen, okay Well I'm gonna dump all of
+that into my novel.txt file. So I'm gonna fill that file
+up with a bunch of text so now that's all inside of that text file. Now, how do I know it's actually there? Well, I don't. I don't know it's actually
+there if I do ls -l, to get that long listing I can see
+my text file is now pretty big, it's 37,000 bytes in size so
+it's got a lot in it. If I wanna view it I
+can type cat novel.txt. Cat says show me the text, output
+the text from inside of the file and just dump it to my screen. So when I run that it's
+gonna dump it to my screen. I can see this text in there right? But there's more than
+what fit on my screen. So instead of using cat I might
+want to use some other commands. Like there's the more command,
+if I say more novel.txt now, it's gonna display it one page at a time,
+right? But I can only go forward with this one. So instead of more, I usually use
+a different command called less. Less let's go forward and backwards. At first it looks like the more
+command if I press space I go forward each page space to move forward. But I can also use my up and down
+arrows to scroll whichever way I want. And I can even search for things using the
+less command if you type a forward slash and then something you want to search for. So I want to search for, I don't know,
+my hard drive sda so I'll search for that and it'll jump and it'll find it for
+me inside of that file. That's a really handy thing to have
+when you're dealing with a big file. So those are all ways
+that I can view the file. If I want to edit the file,
+I need to use a text editor. The most common text editor in
+distress today is one called Nano. So I can type Nano followed
+by the file names. So novel dot.txt in my case. And now I'm editing the file and
+I can actually get in here and change what's in the file. Now, I'm actually able to modify it and I see all my keyboard shortcuts at
+the bottom, that's why nana's so popular. The keyboard shortcuts
+are displayed right on the screen. If I want to exit, I hit control X. And we can save that and get out. There's other many different
+text editors that are out there. Another popular one is vim them
+is not very user friendly, it's a difficult one to learn. We're gonna do a whole
+episode on it later but with this one, I don't have it
+installed but I can go in and I can actually start to modify that
+file that might be alias filei it is. And so now I can get in and I can start
+to modify the file the same way punching in data, whoops I keep hitting my arrows,
+but I can punch in that information and get it set the way that I want it. And when it's all said and done,
+I can say that final and get out. Not very user friendly,
+but it is one that works. So it's up to you which text
+editor you want to use? &gt;&gt; All right,
+don I'm gonna use your quote here. Any quality of life tips or anything
+else that you might want to tell our viewers that might make working
+the command line a little easier. &gt;&gt; Sure, there there's some neat
+features that are available. Usually your terminal even
+make something's available or your shell will do some things. For example,
+here let's take a look at mine. You can use your up and down arrows to bring back commands
+that you've recently typed. And so if you want to run a command
+a second time, you can scroll back and pull it or
+scroll forward if you went too far and you can type history to view a list
+of all the commands you have typed. And so I see each of
+the commands that I've typed. So I can easily bring o ne of
+those back again if I want. History is a really neat thing to have. Another thing If we're
+typing a long command, like let's say I want
+to type host named CTL. That's the command we used
+to change our host name. Well that's a long one. I could just type host and
+sometimes you can hit tab on your key. If you hit tab, it tries to do what's
+called tab auto complete to see, do I have enough to know exactly which
+command you're typing in my case. They don't because there's
+another one called host name. And so I have to type enough letters to
+make it unique and then I can tab and it will auto complete. Let's try a different one. Like if config I'm gonna type IFC and
+hit tab. And I don't have that command apparently. Would be a good one. I'm trying to think of long command names. Most of them are short Lennox they like to
+have commands are four letters long tab. Auto complete isn't to
+W wireless interface. [UNKNOWN] I don't know if I have that one. Well, actually, the easy way to find out. I type I W and hit tab. And it showed me some of
+the ones that we've got. IW config I can type IWC and
+then press tab, and then auto complete. So it's a nice way to be able to save
+a little bit of typing there and kind of handy. Also if we're doing a lot
+of command line arguments. If I'm typing some really long
+command out, maybe I've got a bunch of options and then I have
+arguments and file name and so on. I might want to jump to the beginning or
+the end of the line. You can use control A to jump
+to the beginning of the line and control E to jump to the end of the line. That makes it easy to edit
+commands as you're typing. These are all just little things
+that you learn over time and the more you use them they just
+kind of become muscle memory. It's just a default thing that you do when
+you're working with the command line. &gt;&gt; I tell you that control it can come
+a long way when you forget to use Sudor on something. Yeah sure. Absolutely. All right everyone that's all
+the time we have for this episode. But keep in mind don't
+let it intimidate you. Get in there and
+use the cli inside of Lennox and you're gonna be an administrator
+before you know it. Ladies and
+gentlemen all the time we have for this episode but continue the journey
+in Compton is Lennox Plus with us. &gt;&gt; Thank you for watching ITProTV.
+
+You might have seen or
+heard the name Linux in the past. But did you know Linux is the most-used
+operating system in security today? Let's start by taking a look at Linux and
+how it's used in security. Linux is an open-source operating system. It was created in two parts. In the early 1990s, two different people
+were working separately on projects to improve computer engineering. The first person was Linus Torvalds. At the time, the UNIX operating
+system was already in use. He wanted to improve it and make it
+open source and accessible to anyone. What was revolutionary was his
+introduction of the Linux kernel. We're going to learn what
+the kernel does later. Around the same time,
+Richard Stallman started working on GNU. GNU was also an operating
+system based on UNIX. Stallman shared Torvalds' goal of
+creating software that was free and open to anyone. After working on GNU for
+a few years, the missing element for the software was a kernel. Together, Torvalds' and Stallman’s innovations
+made what is commonly referred to as Linux. Now that you've learned
+the history behind Linux, let's take a look at
+what makes Linux unique. As mentioned before, Linux is open source, meaning anyone can have access to
+the operating system and the source code. Linux and many of the programs that come
+with Linux are licensed under the terms of the GNU Public License, which allow you
+to use, share, and modify them freely. Thanks to Linux's open-source philosophy
+as well as a strong feature set, an entire community of developers
+has adopted this operating system. These developers are able to
+collaborate on projects and advance computing together. As a security analyst, you'll discover that Linux is
+used at different organizations. More specifically,
+Linux is used in many security programs. Another unique feature about Linux
+is the different distributions, or varieties, that have been developed. Because of the large
+community contribution, there are over 600 distributions of Linux. Later you'll learn more
+about distributions. Finally, let's take a look at how you
+would use Linux in an entry-level security position. As a security analyst, you'll use many
+tools and programs in everyday work. You might examine different types of logs
+to identify what's going on in the system. For example, you might find yourself looking at
+an error log when investigating an issue. Another place where you will use
+Linux is to verify access and authorization in an identity and
+access management system. In security, managing access is key
+in order to ensure a secure system. We'll take a closer look into access and
+authorization later. Finally, as an analyst,
+you might find yourself working with specific distributions designed for
+a particular task. For example, you might use a distribution
+that has a digital forensic tool to investigate what
+happened in an event alert. You might also use
+a distribution that's for pen testing in offensive security to
+look for vulnerabilities in the system. Distributions are created to
+fit the needs of their users. I hope you're excited to
+learn more about Linux. This will be a very useful
+skill in the security field.
+
+To view user and group
+information in Windows. We're going to use the
+computer management tool. If we search computer
+management in our application search
+and open it up, we'll see a window that gives
+us a lot of information. We'll be using this application a lot throughout this course. So let's take some
+time to go over it. At the top of the sidebar, you'll see it says,
+computer management Local. This means we're managing
+a single machine locally. In an enterprise environment, you can manage multiple machines in something called a domain. A Windows domain is a
+network of computers, users, files, etc, that are added to a
+central database. If you're an admin
+of that domain, you can view those accounts in computers from any
+machine in the domain. Underneath this menu,
+we have system tools. Let's do a rundown of each of these sub menus. Task scheduler. This lets you schedule programs and tasks to run
+at certain times, like automatically shutting
+off the computer at 11:00 PM every
+night. Event viewer. This is where our system
+stores its system logs. Shared folders. This shows the folders
+that different users on the machine
+share with each other. Remember how we said that other users can view
+anyone else's files? That's not exactly true. If user store files
+on a shared folder, anyone who has access to
+that folder can view it. Local users and groups. This is where we'll be doing our user and group management. Performance. This
+shows monitoring for the resources
+of our machine, like CPU and RAM. Device manager. This is where we go to manage devices
+to our computer, like our network cards, sound cards, monitors, and more. Under the storage menu, we have a sub menu
+for disk management. Finally, the services
+and applications menu shows us the programs and services that we have
+available on the system. We can choose to
+enable or disable services like DNS here, all the essential
+settings that we as administrators
+need to change are found in the computer
+management tool. If you're a power user, it's more efficient to
+use this than it is to go through the default
+settings application. Okay, let's get back
+to the task at hand. Let's see what kind
+of user account we have and what groups
+were part of. Let's go back to the
+local users and groups. Under users, we can see a few
+built-in Windows accounts, like guest and administrator. The local administrator
+account lets you login using the administrator username and whatever the administrator
+password is on the computer. This account is
+disabled by default. Since this account
+it has unfettered access on the computer, it can be dangerous to be
+logged into it at all times. For now. Let's look at
+the account I'm in. Cindy. Let's double-click on this to see more information. Let's do run down here. Under the tab general, we can see some basic
+information about the user, along with some options. User must change
+password at next login. Since I'm an admin, I can force other users to change
+their password. This is useful if I'm managing someone's account and their
+password was compromised. We don't want to risk someone else logging into their account. So we force them to
+change their password. User cannot change password. Password never expires. Account is disabled. Enabling or disabling an account means making it
+active or inactive. Account is locked out. This means a user account
+will not be able to login. Maybe a disgruntled employee is looking to do malicious things. We can make it so that they won't be able to log
+into their computer. Under the member of tab, we can see which
+groups were part of. I can see that I'm in the
+administrator's group heads up that instead of
+being logged into the local administrator
+account all the time, you can be logged into
+your own account and use administrative
+powers when you need to. This is thanks to the help of
+UAC or User Account Control. This is a feature in
+Windows that prevents unauthorized changes
+to a system. These changes have
+to be approved by an administrator instead. Since I'm an administrator, all I would do is enter in my password to confirm that
+I want to make a change. Finally, on the
+last tab profile, you can change settings
+about your user profile, like where you want
+your home folder to be. This isn't terribly important
+on a local account, but it comes in
+handy when you're managing many users on a domain. Now, if we go to the groups
+menu in the sidebar, it should look familiar. Just like the member tab, we can view which groups are available and who
+their members are. That's how you feel user and group information
+using the Windows GUI. Next, let's take a
+look at how to do the exact same thing
+using Windows CLI.
+
+As we've now learned, there are files and folders that have different permission
+sets on them so that unwanted eyes can't
+view or modify them. There are three
+different permissions you can have in Linux. Read, this allows someone to read the contents of
+a file or folder. Write, this allows someone to write information to
+a file or folder. Execute, this allows someone
+to execute a program. Let's take a look at this
+with the ls command. We'll use the long flags so we can see the permissions
+on the file. The first thing we see in
+this column is -rwxrw-r- -. There are 10 bits here. The first one is the file type. In this example, dash means that the file we're looking at
+is just a regular file. Sometimes you might see d, which stands for a directory. The next nine bits are
+our actual permissions. They're grouped in
+trios or sets of three. The first trio refers to the permission of the
+owner of the file. The second trio refers to the permission of the group
+that this file belongs to. The last trio refers to the permission of
+all other users. The r stands for readable, w stands for writable, and x stands for executable. Like in binary, if a bit is set, then we say that it's enabled. For our permissions, if a bit
+is a dash, it's disabled. If it has something other
+than a dash, it's enabled. Permissions in Linux are super flexible and powerful
+because they allow us to set specific
+permissions based on a role such as an owner in
+a group or everyone else. Let's take a look
+at this in detail. The first set of permissions rwx refers to the permission of
+the user who owns that file. In this case, it's Cindy, where you can see in
+the owner field of ls -l. It says here that the
+owner of the file can read, write, and execute this file. The next set of permissions
+are group permissions. We can see the group this file belongs to is the cool group. They have read and
+write permissions, but not execute permissions. Lastly, the permissions for all other users and groups only allow them to
+read this file. That's Linux permissions
+in a nutshell. It might take some time to get used to reading permissions. Don't worry, you'll eventually
+get the hang of it. As always, feel free to review this lesson again if
+you need a refresher.
+
+In today's lesson, we're gonna talk about Windows' built-in security controls. We're gonna discuss the many features that Windows has for security. There's a lot of them, but we're gonna – I'm gonna explain how users can use them. I'm gonna explain how enterprises can use them and system administrators can use them as well. And we're gonna discuss how that technology can affect or might not affect the user, overall user experience. The first technology Windows has built in is Windows Defender. It's Windows' anti-virus. It's configurable by both the system administrator and the end user. The system administrator can run scans from the server, or the user can run their own scans, administrators can put controls on them so that it's always scanning certain files or not scanning certain files and so can end users. In Windows 10, we've seen the Defender actually become more robust. We're now we're looking at cloud services and they're feeding information into Windows Defender to make it better. For user experience, users don't generally know what's running. It has been really streamlined in the past several years for performance. However, depending on the operating system, let's say that you don't use Windows 10, you use Windows 7 or Windows 8. You're going to get not the same experience and, in fact, Microsoft has actually said before that their Defender technology is only the baseline of security – it doesn't cover everything. So you may want other security controls in place to protect your Windows environment. The next feature is the Windows Firewall. This has been prevalent in Windows ever since Windows XP came out back in 2000. It's a standard GUI or CLI-based technology where you can configure, well, the administrator and the end user can both configure the firewall to block or allow ports or applications or services depending on what you want to do to protect your system. This is, again, configurable by the end user and also by the system administrator. For example, here at the university, we lock down shared printing. The reason why we do that is in case someone decides to have a sensitive document and print it out where it shouldn't be printed out, we lock that down so that can't happen. So you have to request a firewall exception which then we move that person into a different organizational unit which we've talked about before to allow them to do the configurable or the shared printing, rather. User experience: user only notices if something has been blocked. It's very, really, there's no performance hit on the user experience. Next technology is Secure Boot and UEFI. Windows, ever since Windows 8, we've seen the emergence of Secure Boot. It basically verifies that the bootloader is consistent and is a validated bootloader on the system. If a virus were to get into the bootloader and manipulate some of those operating system and the kernel functions, then Secure Boot would say we're not booting the system. It's not configurable by the end user and it's not also configurable by the administrator, it's just built it. So the only time a user is gonna notice it is when they actually start up their system. Some of the newer technology, I'm sorry, rather the older technology cannot use Secure Boot because it doesn't have enough requirements to actually run it. The next technology is VBS. This is actually new within Windows 10 and Windows Server 2016. A VBS is... or stands for virtualization-based security. This one is very, in my opinion, very difficult to implement. The reason why is it takes a lot of requirements in order to run some of the capabilities that we have with the virtualization-based security. So we have to have a TPM chip, we have to have some additional virtualization technology in our chipset like SLAT, which stands for Second Level Address Translation, and there's several other technologies in order to get virtualization-based security to run appropriately. However, once it's actually running, it separates the specific processes, the security processes, from the underlying applications so that if a virus were to get in, the operating system is going to be protected. It's very, very robust. So Device Guard and Credential Guard are next to security technologies built into Windows, and these use virtualization-based security as well to protect, not only devices, but credentials. That's why they named it Device Guard and Credential Guard. So they use the virtualization sublayer to run different components of that operating system whether you're running credentials through the LSASS process or if you're running different devices like a USB drive as well. Okay. The last technology is called DEP, stands for Data Execution Prevention. We can turn DEP onto any application that we want. Basically, it allows what memory is running to only be accessed, that certain amount of memory, only by the program. So if a virus, rather, were to enter into that program and execute, we can't go outside that program. It's configured either through the administrator or the end user to run. However, it can be very cumbersome on users if there is an update, for example, or if the memory needs to expand. So in conclusion, Windows has many different features, security features that will enable us to make our Windows systems more, well, protected, essentially. There are a lot more security features built into Windows but those were just some of the main ones that we want to focus on. They'll help us decrease our overall attack surface if we use them appropriately. Windows provides security to protect systems and end users. However, they are only effective if we program them correctly.
+
+In today's lesson, we'll discuss Linux and security. We're going to discuss what threats Linux has, discuss what items administrators need to be concerned with when dealing with Linux systems, and understand that there's no such thing as a secure computer. Even Linux gets viruses. So, the question I always hear is, is Linux secure? Well, no computer is ever secure. So, computers may be secure at one specific point in time, but it depends on a whole bunch of different things. So it depends on how, where, what software you have on it, a whole bunch of different things to make sure that a computer system is secure. So we can configure Linux in a specific way to make sure that it is secure at one point in time. So, if my computer is – Linux computer – is completely off the network and I have all the latest patches and it's in a locked room, is it secure? Maybe, maybe not. Depends on what threats that it has against it. So maybe somebody could break in the door. If I don't have a password or the hard drive is not encrypted, I can easily bypass the security of that device and get in. So it doesn't matter if it's on the network or not, doesn't matter if it's locked in a room. So, I need to make sure that I have layers of security protecting my Linux system just as I would any other system. It's no more secure than a Windows system and it's no more secure than a Mac. Everything gets viruses. Everything has problems with users and configuration unless I follow very strict guidelines. Linux can be configured in such a way while that you wouldn't have or you would mitigate a lot of those security vulnerabilities. There are also some pitfalls that we have when dealing with Linux, specifically. Okay, the benefits of Linux for security. Linux, because it's open source, we don't see many viruses being developed for it. We see Linux has the tendency to have software installed that has vulnerabilities. But because Linux is open source and has a community of developers around it, the more eyes you have on something, the greater security it has. So the Linux security, or the Linux kernel itself, is pretty secure. There's always something or a vulnerability that may come out here or there, but it's patched relatively quick. In the past year, we have seen – or two years depending on whenever you're viewing this – we've seen Shellshock, we've seen Ghost, and those have been really serious Linux vulnerabilities that we can exploit. Software typically has less privileges as well, within Linux. So, Linux processes things with a user and a group as well. So, Linux is pretty secure from the standpoint of software execution unless you increase its privileges. The size of Linux is smaller, meaning that the community or where Linux is installed in is smaller. So, where Windows, for example, has millions, billions of machines running Windows versions, we may see very little of those machines actually running Linux, and we don't install a lot of software on those Linux machines either even though they are running a majority of the large enterprise systems across the Internet. So how Linux may be compromised? There are four different areas that system administrators need to be concerned with when looking at Linux and security. The first one is software vulnerabilities; second one is gonna be configuration errors; third one is social engineering, users in general; and finally the fourth one is going to be rootkits, viruses, and Trojans. So from greatest threat to least threat, let's go through these one by one. Software vulnerabilities. For as long as I can remember, buffer overflows are still the number one vulnerability out there for software. Developers either forget to sanitize their code for memory leaks and buffer overflows or buffer underruns may take place, but it's still the number one thing that plagues everything. So, the software that's installed on Linux is not infallible to exploitation of buffer overflows or buffer underruns. So, the Linus's Law states basically given enough eyeballs, all bugs are shallow, meaning that the more people that you have looking at code and developing that code, the less chance you have at major vulnerabilities and those vulnerabilities becoming public. Developers of custom software may not have the luxury of testing software, so software vulnerabilities may be in some of that code that is not used by a lot of people. Software also may not be patched. Linux typically uses package managers to manage the software that's installed on them. However, if we compile Linux code or source code and put those on our systems, install the code from source, we don't get that luxury of those patches unless you recompile that software again. So, it's always best to use a package manager to install certain packages for example, like Debian packages or RPMs for example. Configuration errors is the second most common type of threat that we see with Linux. Because we're configuring manually a lot of software on Linux, we have a tendency to make mistakes. So, a directory, the permissions on that directory may be incorrect, or we may forget to delete a configuration page which may allow an attacker in, for example, or perhaps one of the ports that we have for a certain application is left unsecured. For example, port 3306 for MySQL. If we forget to turn that port off or put it behind the firewall, an attacker may get in. It's very easy to do something in Linux, meaning that you can type in rm -rf /* for example and delete everything – Linux will let you do that. It's very unforgiving that you can't undo it, unlike Microsoft or Windows which will not let you delete all your files. So, forgetting to do something like that and not have root privileges is also one of those configuration errors that we need to watch out for. Social engineering and users are always a concern no matter what operating system that you're using – no matter if it's Mac, Windows, Sun, doesn't matter. And we need to be concerned with social engineering and users because users are the weakest part of any system. Even though it's the job of the system administrator to make sure systems are secure, humans cannot be secure 100% of the time. So, if a user leaks their password information out, an attacker may get into that system. This is very evident in one of the more famous cases in the hacktivist group, Anonymous, several years ago with the HBGary leaks. This social engineering of the CEO actually led to their downfall of HPGary, and Anonymous was at the helm of that. Okay, users make mistakes; users accidently delete files, for example, like I said, rm -rf /*. Okay? It's a very easy command to enter. If your users have privileges to do that, then they've just destroyed a system. Amazon and other large corporations have been taken down because of configuration errors and inadvertent commands. So several weeks ago and depending on when you're viewing this video, maybe months, maybe a year, but Amazon – a third of Amazon – was taken down their AWS platform because somebody accidentally entered a wrong command when configuring some software. So it took out major companies – major companies lost millions of dollars of revenue because Amazon was down. Finally, rootkits, viruses, and Trojans. Linux is not as susceptible to rootkits, viruses, and Trojans because of the way that they're built, because of the way the privileges are designed to be least privileges. They're still better than a lot of the other operating systems out there that are less secure. Windows for example, most Windows users have elevated privileges, for example. An example of a Linux worm would be the Morris worm back in 1988, which was one of the very first worms for Linux. Okay? Linux also has several different types of ways to mitigate that. So, chkrootkit, rkhunter, and ClamAV are all open-source packages that are designed to keep Linux secure. So in conclusion, administrators need to be diligent about how they are addressing security, and security always needs to be a consideration. While Linux doesn't contract viruses often, we still need to be concerned with configuration errors and software vulnerabilities and make sure our systems are up to date.
+
