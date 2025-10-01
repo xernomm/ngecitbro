@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader2 } from 'lucide-react';
+import { Send, Bot, User } from 'lucide-react';
 import { Message } from '../types';
 import { ApiService } from '../services/api';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
+import smoking from '../img/smoke-cigarettes.gif'
 
 interface ChatInterfaceProps {
   selectedDocs: string[];
@@ -247,9 +248,11 @@ export function ChatInterface({ selectedDocs, messages, setMessages }: ChatInter
             <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
               <Bot size={16} className="text-white" />
             </div>
-            <div className="max-w-3xl px-4 py-3 rounded-2xl bg-gray-100 text-gray-800 flex items-center gap-2">
-              <Loader2 size={16} className="animate-spin" />
-              <span>Sabar jons sebats dlu..</span>
+            <div className="text-gray-800 col-span-full text-lg">
+              <img src={smoking} alt="" />
+              <span>Sabar jons sebats dlu,,</span>
+              <br />
+              <span>Pertanyaan lu susah bet ajg..</span>
             </div>
           </div>
         )}

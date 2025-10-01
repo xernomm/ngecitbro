@@ -466,7 +466,7 @@ def rerank_hits(question: str, hits: List[Dict[str, Any]], top_k: int = 5, model
 # -----------------------
 # Assemble labeled context string
 # -----------------------
-def assemble_context_string(hits: List[Dict[str, Any]], max_chars: int = 3000, max_snippet_chars: int = 1200) -> str:
+def assemble_context_string(hits: List[Dict[str, Any]], max_chars: int = 5000, max_snippet_chars: int = 3000) -> str:
     """
     Build a single string with labelled chunks, limited by max_chars (approx).
     Each chunk includes its ID and a truncated snippet of max_snippet_chars.
@@ -495,7 +495,7 @@ def assemble_context_string(hits: List[Dict[str, Any]], max_chars: int = 3000, m
 # Strict system instruction for answer generation
 # -----------------------
 SYSTEM_INSTRUCTIONS_STRICT = """
-Anda adalah asisten yang hanya boleh menggunakan informasi yang diberikan di bagian 'KONTEXT' untuk menjawab pertanyaan.
+Anda adalah asisten yang hanya boleh menggunakan informasi yang diberikan di bagian 'CONTEXT' untuk menjawab pertanyaan.
 - Jangan menambahkan atau mengarang informasi di luar konteks.
 - Untuk setiap fakta penting yang Anda sebutkan, sertakan citation singkat di akhir klausa dalam bentuk [CHUNK_ID].
 - Jika jawaban tidak ada di konteks, jawab: "Maaf, saya tidak menemukan informasi itu dalam dokumen yang diberikan."
@@ -522,8 +522,9 @@ def generate_answer(user_input: str,
     top_hits = rerank_hits(user_input, hits, top_k=5, model=model)
 
     # Note: tune these limits to fit your model's context window
-    context_str = assemble_context_string(top_hits, max_chars=3500, max_snippet_chars=1200)
-
+    context_str = assemble_context_string(top_hits, max_chars=5000, max_snippet_chars=3000)
+    if context_str: 
+        print(context_str)
     sys_instr = system_instructions or SYSTEM_INSTRUCTIONS_STRICT
     messages = [
         {"role": "system", "content": sys_instr},

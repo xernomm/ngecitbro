@@ -1,0 +1,772 @@
+Computers speak to
+each other in numbers. At the very lowest levels, all computers really
+understand are one and zero. Reading binary numbers isn't
+the easiest for humans, so most binary numbers are represented in lots
+of different forms. This is especially true in
+the realm of networking. Imagine having to
+remember the four octets of an IP address for
+every website you visit. It's just not a thing that the human brain is
+normally good at. Humans are much better
+at remembering words. That's where DNS or domain
+name system comes into play. DNS is a global and highly
+distributed network service that resolves strings of letters into IP
+addresses for you. Let's say you wanted to check a weather website to see what the temperature
+is going to be like. It's much easier to type www.weather.com
+into a web browser, then it is to remember that
+one of the IP addresses for this site is 184.29.131.121. The IP address for
+a domain name can also change all the time for
+a lot of different reasons. A domain name is
+just the term we use for something that
+can be resolved by DNS. In the example we just used, www.weather.com would
+be the domain name, and the IP it resolves to could change depending
+on a variety of factors. Let's say that weather.com was moving their web server
+to a new data center. Maybe they've signed
+a new contract or the old Data Center
+was shutting down. By using DNS, an
+organization can just change what IP a
+domain name resolves to, and the end user would
+never even know. Not only does DNS make it easier for humans to remember
+how to get to a website, it also lets administrative
+changes happen behind the scenes without an end user having to change their behavior. Try to imagine a world where you'd have to
+remember every IP for every website you
+visit while also having to memorize new
+ones if something changed. We'd spend our whole
+day memorizing numbers. The importance of DNS for how the Internet operates
+today can't be overstated. IP addresses might resolve to different things depending on
+where in the world you are. While most Internet
+communications travel at the speed of light, the further you
+have to route data, the slower things will become. In almost all situations, it's going to be quicker to
+transmit a certain amount of data between places that are geographically
+close to each other. If you're a global web company, you'd want people from all
+over the world to have a great experience
+accessing your website. Instead of keeping all of your
+web servers in one place, you could distribute them across data centers across the globe. This way, someone in
+New York visiting a website might get served by a web server close to New York, while someone in New Delhi might get served by a web server
+close to New Delhi. Again, DNS helps provide
+this functionality. Because of its global structure, DNS lets organizations decide
+if you're in the region, resolve the domain
+name to this IP. If you're in this other region, resolve this domain
+to this other IP. DNS serves lots of
+purposes and might be one of the most important
+technologies to understand as an IT
+support specialist, so you can effectively
+troubleshoot networking issues.
+
+At its most basic, DNS is a system that converts domain
+names into IP addresses. It's the way humans are likely
+to remember and categorize things resolved into the way computers prefer to
+think of things. This process of
+using DNS to turn a domain name into an IP address is known as name resolution. Let's take a closer look
+at exactly how this works. The first thing that's
+important to know is that DNS servers are one of the things that need
+to be specifically configured at a
+node on a network. For a computer to operate
+on a modern network, they need to have a certain
+number of things configured. Remember that MAC addresses are hard-coded and tied to
+specific pieces of hardware. But we've also covered that
+the IP address, subnet mask, and gateway for a host must
+be specifically configured. A DNS server is the fourth and final part of the standard modern
+network configuration. These are almost always the
+four things that must be configured for a host to operate on a network
+in an expected way. I should call out
+that a computer can operate just fine without DNS or without a DNS
+server being configured, but this makes things difficult for any human that might be using
+that computer. There are five primary types of DNS servers: caching
+name servers, recursive name servers,
+root name servers, TLD name servers, and
+authoritative name servers. As we dive deeper into these, it's important to note that any given DNS server can fulfill many of
+these roles at once. Caching and recursive
+name servers are generally provided by an
+ISP or your local network. Their purpose is to store domain name lookups for a
+certain amount of time. As you'll see in a moment,
+there are lots of steps in order to perform a fully qualified resolution
+of a domain name. In order to prevent this
+from happening every single time a new TCP
+connection is established, your ISP or local network will generally have a caching
+name server available. Most caching name servers are also recursive name servers. Recursive name
+servers are ones that perform full DNS
+resolution requests. In most cases, your
+local name server will perform the duties of both, but it's definitely possible
+for a name server to be either just caching
+or just recursive. Let's introduce an example to better explain
+how this works. You and your friend are both connected to the same network, and you both want to
+check out facebook.com. Your friend enters www.facebook.com
+into a web browser, which means that their computer now needs to know the IP of www.facebook.com in order
+to establish a connection. Both of your computers
+are on the same network, which usually means
+that they've both been configured with
+the same name server. So your friend's computer
+asks the name server for the IP of www.facebook.com,
+which it doesn't know. This name server now performs a fully recursive resolution to discover the correct IP
+for www.facebook.com. This IP is then
+both delivered to your friend's computer and
+stored locally in a cache. A few minutes later, you enter www.facebook.com
+into a web browser. Again, your computer needs to know the IP for this domain, so your computer asks the local name server it's
+been configured with, which is the same one your friend's computer
+was just talking to. Since the domain name
+www.facebook.com had just been looked up, the local name server still has the IP that it resolved to store and is able to
+deliver that back to your computer without having
+to perform a full lookup. This is how the same servers
+act as a caching server. All domain names in
+the global DNS system have a TTL or time to live. This is a value in
+seconds that can be configured by the owner
+of a domain name for how long a name server is
+allowed to cache an entry before it should discard it and perform a full
+resolution again. Several years ago, it was normal for these TTLs to
+be really long, sometimes a full day or more. This is because the
+general bandwidth available on the Internet
+was just much less, so network administrators didn't want to waste what bandwidth was available to them by constantly performing
+full DNS lookups. As the Internet has
+grown and gotten faster, these TTLs, for most domains, have dropped to anywhere from a few minutes to a few hours. But it's important to know
+that sometimes you still run into domain names
+with very lengthy TTLs. It means that it can take up to the length of a total TTL for a change in DNS record to be known to the
+entire Internet. Now, let's look at
+what happens when your local recursive
+server needs to perform a full
+recursive resolution. The first step is always to
+contact a root name server. There are 13 total
+root name servers, and they're responsible
+for directing queries toward the appropriate
+TLD name server. In the past, these
+13 root servers were distributed to very
+specific geographic regions. But today, they're mostly distributed across the
+globe via anycast. Anycast is a technique
+that's used to route traffic to different
+destinations depending on factors like location, congestion, or link health. Using anycast, a
+computer can send a datagram to a
+specific IP but could see it routed to one of many different
+actual destinations depending on a few factors. This should also make it clear
+that there aren't really only 13 physical root
+name servers anymore. It's better to think of
+them as 13 authorities that provide root name
+lookups as a service. The root servers will respond to a DNS lookup with the TLD name server
+that should be queried. TLD stands for
+top-level domain and represents the top of the hierarchal DNS name
+resolution system. A TLD is the last part
+of any domain name. Using www.facebook.com
+as an example again, the dot com portion should
+be thought of as the TLD. For each TLD in existence, there's a TLD name server. But just like with root servers, this doesn't mean there's only physically one
+server in question. It's most likely a
+global distribution of anycast accessible servers
+responsible for each TLD. The TLD name servers
+will respond again with a
+redirect, this time, informing the
+computer performing the name lookup with what authoritative name
+server to contact. Authoritative name
+servers are responsible for the last two parts
+of any domain name, which is the resolution at which a single organization may be
+responsible for DNS lookups. Using www.weather.com
+as an example, the TLD name server would point a lookup at the authoritative
+server for weather.com, which would likely be controlled
+by the weather channel, the organization itself
+that runs the site. Finally, the DNS lookup could be redirected at the authoritative
+server for weather.com, which would finally provide the actual IP of the
+server in question. This strict hierarchy is very important to the
+stability of the Internet. Making sure that all
+full DNS resolutions go through a strictly regulated
+and controlled series of lookups to get the
+correct responses is the best way to protect against malicious parties
+redirecting traffic. Your computer will blindly send traffic to whatever
+IP it's told to. So by using a
+hierarchical system controlled by trusted
+entities in the way DNS does, we can better ensure that the responses to DNS
+lookups are accurate. Now that you see how
+many steps are involved, it should make
+sense why we trust our local name servers
+to cache DNS lookups. It's so that full lookup
+path doesn't have to happen for every
+single TCP connection. In fact, your local
+computer from your phone to a desktop will generally have its own temporary
+DNS cache as well. That way, it doesn't
+have to bother its local name server for
+every TCP connection either.
+
+DNS is a great example of an application layer
+service that uses UDP for the transport
+layer instead of TCP. This can be broken down
+into a few simple reasons. Remember that the biggest
+difference between TCP and UDP is that UDP is
+connectionless. This means there's no setup
+or tear down of a connection, so much less traffic needs
+to be transmitted overall. A single DNS request
+and its response can usually fit inside of
+a single UDP datagram, making it an ideal candidate for a connectionless protocol. It's also worth calling out that DNS can generate
+a lot of traffic. It's true that caches of
+DNS entries are stored both on local machines
+and caching name servers. But it's also true that if the full resolution
+needs to be processed, we're talking about
+a lot more traffic. Let's see what it
+would look like for a full DNS lookup to
+take place via TCP. First, the host that's making the DNS resolution
+request would send a SYN packet to the local
+name server on port 53, which is the port
+that DNS listens on. This name server would then need to respond with a
+SYN-ACK packet. That means the original host
+would have to respond with an ACK in order to complete the three-way handshake.
+That's three packets. Now that the connection
+has been established, the original host would have
+to send the actual request. I'd like the IP address
+for foo.com, please. When it receives this request, the name server would have
+to respond with another ACK. I got your request for food.com. We're up to five
+packets sent now. In our scenario, the
+first caching name server doesn't have anything
+cached for foo.com. It needs to talk to a
+root name server to find out who's responsible
+for the.com TLD. This would require a
+three-way handshake : the actual request, the ACK of the request, the response, and then
+the ACK of the response. Finally, the connection would have to be closed
+via a four-way handshake. That's 11 more
+packets or 16 total. Now that the
+recursive name server has the correct TLD name server, it needs to repeat
+that entire process to discover the proper
+authoritative name server. That's 11 more packets, bringing us up to 27 so far. Finally, the
+recursive name server would have to repeat the
+entire process one more time while talking to the
+authoritative name server in order to actually get
+the IP of foo.com. This is 11 more packets
+for a running total of 38. Now that the local name server finally has the IP
+address of foo.com, it can finally respond
+to the initial request. It responds to the DNS resolver that originally
+made the request, and then this
+computer sends an ACK back to confirm that it
+received the response. That's two more packets, putting us at 40. Finally, the TCP connection needs to be closed via
+a four-way handshake. This brings us to a grand total of 44 packets at the minimum in order for a fully
+recursive DNS request to be fulfilled via TCP. Forty-four packets isn't really a huge number in terms of how fast modern
+networks operate, but it adds up fast,
+as you can see. Remember that DNS traffic is just a precursor
+to actual traffic. A computer almost always
+performs a DNS lookup because it needs to know the IP of a domain name in order to
+send it additional data, not just because it's curious. Now, let's check out how
+this would look with UDP. Spoiler alert, it doesn't
+take as many packets. The original computer sends a UDP packet to its local
+name server on port 53, asking for the IP for
+foo.com. That's one packet. The local name server acts as a recursive server and sends up a UDP packet to the root server, which sends a
+response containing the proper TLD name server. That's three packets. The recursive name
+server sends a packet to the TLD server and receives back a response containing the
+correct authoritative server. We're now at five packets. Next, the recursive name server sends its final request to the
+authoritative name server, which sends a response
+containing the IP for foo.com. That's seven packets. Finally, the local name
+server responds to the DNS resolver that
+made the request in the first place with
+the IP for foo.com. That brings us to a grand
+total of eight packets. See, way less packets. You can see now how much
+overhead TCP really requires, and for something
+as simple as DNS, it's just not needed. It's the perfect example
+for why protocols like UDP exist in addition to
+the more robust TCP. You might be wondering
+how error recovery plays into this since
+UDP doesn't have any. The answer is pretty simple. The DNS resolver just asks again if it
+doesn't get a response. Basically, the same functionality
+that TCP provides at the transport layer
+is provided by DNS at the application layer
+in the most simple manner. A DNS server never
+needs to care about doing anything but responding
+to incoming lookups. A DNS resolver simply needs to perform lookups and repeat
+them if they don't succeed, a real showcase of the
+simplicity of both DNS and UDP. I should call out that
+DNS over TCP does, in fact, exist and is
+also in use all over. As the web has
+gotten more complex, it's no longer the case that all DNS lookup responses can fit in a single
+UDP datagram. In these situations, a
+DNS name server would respond with a packet explaining that the
+response is too large. The DNS client would
+then establish a TCP connection in order
+to perform the lookup.
+
+Welcome to “Packets, IP
+Addressing, DNS, DHCP, and NAT.” After watching this video, you will be able to: Explain what packets and IP addresses
+are and how they relate to networking. Explain the importance of DNS and
+DHCP servers and the NAT process. Everything you do on the
+Internet involves packets. Every Web page that you visit
+arrives as a series of packets, and every e-mail you send
+leaves as a series of packets. Packets are also called frames,
+blocks, cells, or segments. There are three data transmission flow
+types. In Simplex mode, the
+communication is unidirectional, where one of the two devices on a link
+can only transmit but not receive, and the other only receive but not
+send. Like a radio or a keyboard. In half-duplex mode, each station
+can both transmit and receive, but not at the same time. Like a walkie-talkie. In full-duplex mode, both stations can
+transmit and receive simultaneously. Like a phone, or a messaging app. There are four basic transmission
+modes for IP packets: Unicast – transmission to a
+single, specific destination (used for most Internet
+traffic, such as HTTP, and FTP). Anycast – transmission to the
+closest of multiple nodes that have had the same unicast
+address assigned to them. Multicast – transmission to all nodes that have
+“subscribed” to the destination multicast “group” (address). Multicast transmission
+is limited to UDP protocol. Broadcast – transmission to all other nodes on
+the subnet (for example, to find a DHCPv4 server). Broadcast transmission is limited
+to UDP protocol over IPv4 only. When you send an email, it is broken down
+into individually labeled data packets. Each packet travels independently over the network And arrives at their destination in no set order. They are then compiled in the correct
+order to produce the original message. Internet Protocol version four or IPv4
+is one of the core protocols for the Internet. It was developed to provide
+identification for every network device. Internet Protocol Version 6 or IPv6 is the
+newest version of Internet Protocol. IPv6 solves many of the limitations of IPv4,
+including address space and security. IPv4 only allows around 4.3 billion IP
+addresses. With all the smartphones, hotspots, and IoT
+devices, that’s just not enough anymore. IPv6 allows over 340 undecillion IP
+addresses (an undecillion has 36 zeroes). IPv6 ensures larger network capacity, with
+added efficiency and security features. An IP address is used to logically identify
+each device (or host) on a given network. An IPv4 IP address is a 32-bit binary value. It is broken into four 8-character binary
+values called octets. Each octet has a decimal value between 0 and 255. Any IP address with any
+octet higher than 255 is not a valid IP address. An IPv6 IP address is a 128-bit binary value
+broken into 8 fields, each separated by a colon. Each of the IPv6 binary values are represented
+by alphanumeric hexadecimal numbers. There are several different types of IP addresses: Static IP addresses: are manually
+assigned. Network servers or network devices that have specific protocol
+settings often use Static IP addresses. Dynamic IP addresses: are automatically
+assigned. They change every time the device connects to a network or changes location. A public IP address is used
+to communicate publicly outside of the local network.
+It connects to the internet. A private IP address is used to
+connect securely within an internal, private network. It does
+not connect to the Internet. Loopback IP address: is the range of IP
+addresses reserved for the localhost address. Reserved IP addresses are addresses
+that have been reserved by the IETF and the IANA for special purposes. The Domain Name System, or DNS,
+is the phonebook of the Internet. When you type a URL, like www.google.com, into a browser and press enter, the
+browser sends the URL to the DNS server. The DNS server replies with the proper IP address. Your browser will connect
+to the IP address provided. Because number-only IP addresses are
+not as easy for people to remember, DNS translates easy to remember web
+addresses to number-only addresses and ensures that both network devices and the
+people that use them know where they’re going. The Dynamic Host Configuration Protocol, or DHCP,
+automates the configuring of IP network devices. A DHCP server uses a pool of reserved
+IP addresses to automatically assign dynamic IP addresses or allocate a
+permanent IP address to a device. DHCP Static allocation: the server uses a manually
+assigned “permanent” IP Address for a device. DHCP Dynamic allocation: the server
+assigns a different IP address to a device each time it connects to the network. DHCP Automatic allocation: the server assigns a
+“permanent” IP address for a device automatically. Subnetting is the process of taking a large, single network, and splitting it up into
+individual smaller subnetworks or subnets. Subnetting makes network
+routing much more efficient where traffic travels a shorter distance passing
+through fewer routers to reach its destination. Each subnet mask identifies the boundary
+between the IP network and the IP host. A subnet mask is like an IP address, but
+for only internal usage within a network. Routers use subnet masks to route
+data packets to the right place. Automatic Private IP Addressing, or APIPA, is a feature in operating systems like Windows
+that let computers self-configure an IP address and subnet mask automatically when
+the DHCP server isn't reachable. If a device can reach the local network but
+not the Internet, chances are the device was assigned an APIPA address. Find out by
+typing "ipconfig” into the command prompt. Network Address Translation, or NAT,
+is a process that maps multiple local private addresses to a public one
+before transferring the information. Organizations that want multiple
+devices to employ a single IP address use NAT, as do most home routers. NAT conserves public IP
+addresses and improves security. When data packets arrive at
+the public IP address, the NAT instructions send all data
+packets without revealing the private IP addresses of the intended destinations. That single network device acts as an intermediary
+between the private network and the Internet. A media access control address, or MAC address, is
+the physical address of each device on a network. A MAC address usually consists of
+six sets of two digits or characters, separated by colons. Technologies like Wifi,
+Bluetooth, and Ethernet use MAC addresses. A universally administered MAC address, or UAA, is
+uniquely assigned to a device by its manufacturer. A locally administered MAC address, or
+LAA, is assigned to a device by software or a network administrator, overriding the
+burned-in address for physical devices. MAC Addresses handle the physical
+connection from computer to computer while IP Addresses handle logical
+network connection routes. In this video, you learned: Data packets travel in any order across
+networks to be reassembled at the receipt point. The three types of data transmission modes
+are Simplex, Half-duplex, and Full-duplex. IPv4 and IPv6 are core protocols for the internet, with IPv6 being newer, more
+efficient, and more secure. Different IP address types are assigned and
+used for different purposes and security levels. Subnetting allows large networks to split
+into smaller, more efficient subnets.
+
+We've mentioned IP addresses
+a lot in this course, but we haven't actually gone
+into detail about them. There are actually different
+versions of IP addresses. The current protocol, Internet
+protocol version four, or IPV4, is an address that consists of 32 bits
+separated into four groups. IPV4 addresses can be
+something like 73.55.242.3. Even though it might
+seem like a lot of possible IPV4 addresses, there are less than 4.3
+billion IPV4 addresses. There are way more than 4.3 billion websites out
+on the web today. Some IPV4 addresses are even reserved for
+special purposes. The number of usable IP
+addresses is even less. A device that wants
+to connect to the Internet needs to
+have an IP address. But devices around the world have already exceeded
+those numbers. Where have we been
+getting IP addresses? IP addresses have been able to keep up with the amount
+of devices in the world thanks to IPV6 or Internet
+Protocol version 6 addresses, IPV6 addresses
+consists of 128 bits, four times the amount
+that IPV4 uses, which means way more devices
+can have IP addresses. The adoption of IPV6 addresses
+has been slow but steady. Eventually, you'll start seeing more and more IPV6
+addresses in the wild. An example of IPV4 address can be something like 172.14.24.1. But an IPV6 address can be something like
+what you see here. Quite a bit of a difference,
+don't you think? Here's an analogy for
+how big this difference is between IPV4 and IPV6. With IPV6, there are two to the 128th power
+possible IP addresses. Two to the 128th power is
+an insanely huge number, so huge that
+scientists had trouble describing with words just
+how big this number is. Here's an analogy. Think
+of a grain of sand. If you scoop up a handful, do you know how many grains
+you have in your hand? Probably a lot, but that's not even close to the number
+we're talking about. Now, take all the grains of
+sand in the entire world. Assuming there are roughly
+seven and a half times ten to the 18th power grains
+of sand in the world that still wouldn't be
+enough IPV6 addresses. Now, let's take all the
+sand from multiple Earths. Now you're close to what
+that number would be. It's a crazy large number. Just know that we won't
+be running out of IPV6 addresses anytime soon. Another mitigation tool
+that we've been able to use is NAT or Network
+Address Translation. This lets organizations use one public IP address and many private IP addresses
+within the network. Think of NAT like a
+receptionist at a company. You know what number to dial
+to get to the company. Once you reach the receptionist, he can transfer
+your call to one of the private numbers
+inside the company. Now, instead of companies using hundreds of public IP addresses, they can just use
+one IP address. Remember the routers we
+talked about earlier? One task you might need
+to perform when you're an IT support specialist
+is to configure NAT on a router to facilitate communication between your company's network
+and the outside world.
+
+In this video, we'll
+cover some ways that an IT support specialist can implement network
+hardware hardening. In an earlier lesson on
+networking, we explored DHCP. It's the protocol where devices
+on a network are assigned critical configuration
+information for communicating on the network. You also learned
+about configuring DHCP in another course
+of this program. You can see how
+DHCP is a target of attackers because of
+the important nature of the service it provides. If an attacker can
+manage to deploy a rogue DHCP server
+on your network, they could hand out DHCP leases with whatever
+information they want. This include setting
+a gateway address or DNS server that's actually a machine within their control. This gives them access
+to your traffic and opens the door
+for future attacks. Yikes. We call this
+type of attack a rogue DHCP server attack. To protect against this
+rogue DHCP server attack, enterprise switches off a
+feature called DHCP snooping. A switch that has
+DHCP snooping will monitor DHCP traffic
+being sent across it. It will also track
+IP assignments and map them to hosts
+connected to switch ports. This basically builds a map of assigned IP addresses to
+physical switch ports. This information can
+also be used to protect against IP spoofing and
+ARP poisoning attacks. DHCP snooping also makes you designate either a
+trusted DHCP server IP if it's operating
+as a DHCP helper and forwarding DHCP
+requests to the server. Or you can enable DHCP snooping trust
+on the uplinked port, where legitimate DHCP
+responses would now come from. Now, any DHCP responses coming from either an
+untrusted IP address or from a downlink
+switch port would be detected as untrusted and
+discarded by the switch. Let's talk about another form of network hardware hardening,
+dynamic ARP inspection. ARP allows for a Layer 2
+man-in-the-middle attack because of the unauthenticated
+nature of ARP. It allows an attacker to forge an ARP
+response advertising its MAC address as the physical address matching
+a victim's IP address. This type of ARP response is called a gratuitous
+ARP response, since it's effectively answering a query that no one made. When this happens,
+all of the clients on the local network segment
+would cache this ARP entry. Because of the forged ARP entry, they send frames intended for the victim's IP address to the attacker's machine instead. The attacker could
+enable IP forwarding, which would let
+them transparently monitor traffic intended
+for the victim. They could also manipulate
+or modify data. Dynamic ARP Inspection or DAI, is another feature on enterprise switches that
+prevents this type of attack. It requires the use
+of DHCP snooping to establish a trusted binding of IP addresses to switch ports. DAI would detect these forged gratuitous
+ARP packets and drop them. It does this because
+it has a table from DHCP snooping that has the authoritative IP address
+assignments per port. DAI also enforces
+rate-limiting of ARP packets per port to
+prevent ARP scanning. An attacker is likely to ARP scan before attempting
+the ARP attack. To prevent IP spoofing attacks, IP Source Guard or IPSG can be enabled on
+enterprise switches along with DHCP snooping. If you're an IT
+support specialist at a small company that uses enterprise class
+switch hardware, you'll probably utilize IPSG. It works by using the
+DHCP snooping table to dynamically create hackles
+for each switch port. This dropped packets that
+don't match the IP address for the port based on a
+DHCP snooping table. If you really want to
+lock down your network, you can implement 802.1X. It's important for an
+IT support specialist to be aware of 802.1X. This is the IEEE standard
+for encapsulating EAP or Extensible Authentication
+Protocol traffic over the 802 networks. This is also called
+EAP over Lan or EAPoL. It was originally
+designed for Ethernet, but support was added for other network types like
+Wi-Fi and fiber networks. We won't go into the details of all EAP authentication
+types supported. There are about 100
+compatible types, so it would take way too long. But we'll take a
+closer look at EAP-TLS since it's one of the more
+common and secure EAP methods. When a client wants
+to authenticate to a network using 802.1X, there are three
+parties involved. The client device is what
+we call the supplicant. It's sometimes also used to refer to the software running on the client machine that handles the authentication
+process for the user. The open source Linux utility, WPA supplicant is one of those. The supplicant communicates
+with the authenticator, which acts as a gatekeeper
+for the network. It requires clients to
+successfully authenticate to the network before they're allowed to communicate
+with the network. This is usually an
+enterprise switch or an access point in the
+case of wireless networks. It's important to call
+out that while the supplicant communicates
+with the authenticator, it's not actually
+the authenticator that makes the
+authentication decision. The authenticator acts like
+a go-between and forwards the authentication request to
+the authentication server. That's where the actual
+credential verification and authentication occurs. The authentication server
+is usually a radius server. EAP-TLS is an authentication
+type supported by EAP that uses TLS to provide mutual authentication
+of both the client and the authenticating server. This is considered one of the more secure configurations
+for wireless security. So it's definitely possible
+that you'll encounter this authentication
+type in your IT career. Like with many of
+these protocols, understanding how it works can help you if you
+need to troubleshoot. You might remember from
+Course 4 that HTTPS is a combination of the
+Hypertext Transfer Protocol, HTTP, with SSL-TLS
+cryptographic protocols. When TLS is implemented
+for HTTPS traffic, it specifies a
+client certificate as an optional factor
+of authentication. Similarly, most EAP-TLS
+implementations require client-side
+certificates. Authentication can be
+certificate based, which requires a
+client to present a valid certificate that's signed by the authenticating CA. Or a client can use a certificate in conjunction
+with a username, password, and even
+a second factor of authentication like
+a onetime password. The security of
+EAP-TLS stems from the inherent security that the TLS protocol
+and PKI provide. That also means that the
+pitfalls are the same when it comes to properly
+managing PKI elements. You have to safeguard
+private keys appropriately and
+ensure distribution of the CA certificate to client devices to allow
+verification of the server side. Even more secure configuration
+for EAP-TLS would be to bind the client-side
+certificates to the client platforms using TPMs. This would prevent theft of the certificates from
+client machines. When you combine this with FDE, even theft of a computer would prevent compromise
+of the network. We're covering a lot of
+complex processes right now. Feel free to watch this video again so that the
+material really sinks in. Keep in mind, as an IT
+support specialist, you don't need to know every single step-by-step detail here. Knowing what these processes are and how they
+work can be very beneficial while
+troubleshooting and evaluating
+infrastructure security.
+
+Welcome to this video about Internet security
+threats, packet sniffing. After watching this video, you will be able to describe the concept of packet
+and packet sniffing, explain how IT professionals and attackers use
+packet sniffing, identify the types of packet sniffing tactics
+utilized by attackers, discuss a few
+strategies to protect your network against
+packet sniffing. Internet security faces a big problem called
+packet sniffing. It's like someone sneaking into the information sent over the Internet without permission. But what exactly are these
+information-packed packets? Let's break it down. Packets are small units of data
+transmitted over networks. For example, when
+you send an email, packets carry text
+and attachments. Each data packet comprises
+of two essential parts, the header and the payload. Let's look at each
+part in detail. The header is the
+initial point of reference for any
+device, routers, switches, or computers, involved in processing
+or receiving the packet. Consider the header as the
+packet's postage label. It provides critical information such as the source IP address, the destination IP address,
+and the packet number. The source IP address identifies the original
+center's device, while the destination IP address specifies the recipient's
+network address. The packet number,
+a unique sequence, aids in proper message reassembly and traces the packet's
+journey through the network. The payload, on the other hand, is the substantive
+content of the packet. It carries the actual
+data transmitted. Now that you know
+what packets are, let us learn about
+packet sniffing. Imagine a scenario where an organization's network
+experiences unusual slowdowns, and despite initial diagnostics, the root cause remains unknown. This is where the concept of packet sniffing comes into play. Packet sniffing is a
+technique that involves using software to capture and analyze data packets as they
+move through a network. When deployed, this software collects various data points
+by intercepting traffic. In this scenario, packet
+sniffing could reveal that excessive video
+conference calls during peak hours congest
+the bandwidth. Packet sniffers operate by placing the network
+interface card, NIC, of the analyzing computer
+into promiscuous mode. Usually, an NIC only pays attention to
+traffic address to it. But in promiscuous mode, it captures all network traffic, regardless of destination. For instance, when an NIC
+is in promiscuous mode, the packet sniffer can monitor all traffic in the
+connected network segment. The sniffer then interprets
+and decodes packet contents, revealing the data within, following protocols like IP, TCP, UDP, and HTTP. Here are a few
+tasks performed by IT professionals with the
+help of packet sniffing. They employ packet sniffing
+for network diagnostics. They can examine data
+packets to identify suspicious activity or
+diagnose network issues. Next, packet sniffers are helpful in performance
+monitoring, as they provide critical data
+on bandwidth consumption, helping pinpoint resource
+hogs and network bottlenecks. Network administrators
+may also use packet sniffers to
+monitor web activity, including tracking
+visited websites and the nature of the
+content accessed, as well as overseeing
+communication exchanges such as emails. However, it's important
+to remember that packet sniffing is
+only acceptable on networks under the
+organization's control. Packet sniffing
+becomes illegal when individuals capture data
+packets without authorization. This act, known as
+a sniffing attack, involves attackers
+using software to intercept and examine unencrypted data packets containing sensitive
+information. This compromised
+data often includes personal identifiers like
+names, physical addresses, and phone numbers,
+and financial data, including bank account details and user login credentials. The lack of advanced cybersecurity measures
+leaves networks vulnerable to further
+exploitation through techniques like address
+resolution protocol, ARP tampering, domain
+name system, DNS, falsification, or
+the introduction of harmful code into data streams through methods
+like SQL injection. There are mainly two types
+of packet sniffing tactics, passive sniffing and
+active sniffing. Let us discuss each
+of these tactics. In passive sniffing, an eavesdropper
+discreetly connects to a network where multiple devices communicate such as
+local area networks, LANs, or WiFi networks, silently monitoring
+exchange data. This tactic mimics
+surreptitious spying or wiretapping, making
+detection challenging. For instance, an attacker at a public WiFi hotspot
+can discreetly intercept data packets between users without their knowledge. On the other hand, active
+sniffing targets switched networks by introducing
+additional traffic to manipulate data flow. For example, in a corporate
+ethernet environment, an attacker generates
+extra network activity, causing switches to
+broadcast data widely and enabling the interception
+of specific packets. To protect your network against unauthorized packet sniffing,
+implement these strategies. Regularly update software
+and systems to close security vulnerabilities
+preventing cyber intrusions. Strengthen login measures by creating strong
+passwords and employing additional verification
+methods like two-factor or multi-factor authentication
+for enhanced security. Be vigilant with emails
+from unknown sources, avoiding suspicious attachments
+or links that could be phishing tools initiating
+packet sniffing attacks. Use a virtual private
+network, VPN, for encrypted online activities, especially on public
+WiFi networks susceptible to packet
+sniffing threats. Prioritize HTTPS encrypted
+websites for safer browsing, heeding browser warnings
+about unsecured HTTP sites. In this video, you learned
+that Internet security threat, packet sniffing, is
+a technique used to capture and analyze data packets traveling through a network. IT professionals use packet sniffing for
+network troubleshooting, performance monitoring,
+and activity oversight. Attackers use packet
+sniffing to steal sensitive information
+like login credentials, personal details,
+and financial data. There are two primary
+sniffing tactics, passive and active sniffing. The key strategies to
+protect network security against unauthorized
+packet sniffing include system updates, strong login measures,
+vigilant email practices, VPN usage, and prioritizing
+HTTPS encrypted websites.
+
+Welcome to this video
+on IP spoofing. After watching this video, you'll be able to; describe IP spoofing, explain distributed
+denial of service, DDoS, summarize attacks through
+masking botnet devices, describe man-in-the-middle
+attacks, discuss defense mechanisms
+for IP spoofing. Consider this scenario. There are several client systems that send requests
+to a web server. The web server
+processes the request and sends a response back
+to the client system. But how does this
+communication happen? How does a web server know
+where to send the response? Network communication
+fundamentally relies on exchanging IP packets
+between two systems. IP packets form the backbone
+of internet interactions. Every packet contains a
+header with routing data, including the source and
+the destination address. For example, when
+user 1 requests for the ibm.com website, the information is sent
+in a packet containing user 1's IP address and the
+web server's IP address. When the request
+reaches the web server, it will process the request
+and send the result, the content of
+www.ibm.com in this case, to user 1's IP address. Now, think of the situation
+where user 1 sends a request, but edits the header to
+reflect user 3's IP address. Although sent from user 1, the packet now appears to have
+come from user 3 instead. This is an example
+of IP spoofing. IP spoofing involves
+manipulating packet headers to alter
+the source address, effectively concealing
+the true origin of the sender or pretending
+to be another host. Can a recipient
+stop the attacker by blocking emails from
+the forged address? Not really. The attacker can modify their location
+continuously. Similarly, any attempt
+to reply to the sender will be misdirected and will
+not reach the actual sender. IP spoofing is
+commonly employed by attackers to execute
+distributed denial of service (DDoS) attacks,
+disrupting the service of a target or its network. DDoS attacks capitalize on spoofing to flood a target with excess traffic while concealing the attacker's identity
+to avoid countermeasures. The attacker continually
+alters the source IP address, which makes it difficult to intercept and filter
+the hostile packets. Consequently, IP spoofing poses significant challenges for law enforcement and
+cybersecurity teams in their pursuit to locate and
+apprehend the offenders. Next, let's review one of the most referenced instances
+of an IP spoofing attack. The target was GitHub, a prominent
+code-hosting platform. The platform experienced
+a massive DDoS attack. Considered at the time to
+be the largest on record. Attackers manipulated
+GitHub's IP address, orchestrating an assault so large that it temporarily
+crippled the service. In addition to DDoS, IP spoofing can be
+used for masking botnet devices and
+man-in-the-middle attacks. Let's briefly look at
+each of the attacks. A botnet refers to
+a collection of interconnected computers
+centrally controlled by one or more attackers. Each compromised computer runs a specialized bot
+program to perform malicious tasks on
+behalf of the attackers. The attackers use IP
+spoofing to shield the botnet's
+activities and assign fictitious IP
+addresses to each bot. IP spoofing complicates
+tracking down the attacker. The attacker can sustain the attack for an
+extended period, potentially increasing
+the damage inflicted. Next, let's look at the
+man-in-the-middle attack. In this type of attack, the strategy is to intercept the exchange between
+two systems, modify the packets,
+and then forward them undetected by the authentic
+communicator or recipient. Attackers can monitor
+the dialogue by forging an IP address and infiltrating private communication channels. Consequently, they can access sensitive data or redirect individuals to
+fraudulent websites. As the intrusion persists, cybercriminals collect
+extensive private information, which can be
+exploited or traded, rendering man-in-the-middle
+assaults potentially more profitable than
+other attack methods. We cover different types of
+attacks that use IP spoofing, but can IP spoofing
+be eliminated? No, it is impossible to
+eliminate IP spoofing. However, you can minimize the penetration of forged
+packets into a network. One technique used to prevent IP spoofing is
+ingress filtering. Ingress filtering is a
+type of packet filtering. It establishes a critical
+network security measure, where traffic is inspected and managed at the point of
+entry to the network. The primary goal of ingress
+filtering is to allow only authentic and legitimate
+traffic through and block access to unauthorized or potentially harmful
+data packets. This protection ensures
+that only recognized and verified traffic can get through the network's
+perimeters, acting as a barrier against attackers trying to
+infiltrate the system. Ingress filtering scrutinizes
+incoming IP packets by inspecting their
+source IP headers. If the headers do not correlate with their expected origins or present any signs of tampering or anomalies,
+they are blocked. Egress filtering is
+another technique to protect your network
+from IP spoofing. Specific networks
+deploy egress filtering as an added layer of protection. Egress filtering scrutinizes
+outgoing IP packets, verifying that they possess authentic source headers to
+deter individuals inside the network from
+exporting spoofed packets as part of an offensive
+IP spoofing campaign. In this video, you
+learned that IP spoofing involves manipulating
+packet headers to alter the source address, effectively concealing
+the true origin of the sender or pretending
+to be another host. DDoS commonly employs
+IP spoofing and floods a target with excess
+traffic, disrupting services. A botnet refers to
+a collection of interconnected computers
+centrally controlled by one or more attackers. The man-in-the-middle
+strategy is to intercept the exchange
+between two systems, modify the packets
+and then forward them undetected by the authentic
+communicator or recipient. IP spoofing poses challenges to law enforcement and
+cybersecurity teams. IP spoofing can be limited using the following techniques;
+ingress filtering, which establishes a critical network security measure where traffic is inspected and
+managed at the point of entry to the network,
+egress filtering, which specific networks deploy as an added layer of protection.
+
+We've covered a lot of information so far. Great job pushing through. In this final stage, we're going to discuss how to maintain the security of your existing applications. API S and services. We've talked about encrypting the traffic to and from your site, adding two factor authentication and even adding rate limiting. But security doesn't stop there. Security is a constant concern, not a list of boxes to check. Let's start with a story. Imagine that you've just deployed your new application to production day after day users join more quickly than your team ever expected. Your team continues adding more and more features making the application even better. Then one day an engineer notices some odd entries in the log upon further investigation. You see that some service that you didn't create is making requests to a server not owned by you or anyone else at your company. Yikes, it looks like you've been hacked. After discovering the issue, your team quickly responds, removes the rogue malware in your system and investigates how it all started. After hours of looking, it turns out the hackers exploited a security flaw in the ruby on rails source code, not even your own code. However, no one on your team ever updated rails after months of the application running in production, which has led to some very nasty media coverage, customer emails, extremely harmful reputation damage and the firing of your chief security officer. This leads us to the following key takeaway. Keep your applications updated and patch any security flaws as updates are released, patching your applications and keeping them updated means that security flaws will get fixed as soon as they are discovered by the maintainers of the software you use. Not keeping code up to date has led to numerous incidents at companies across the world. For example, the 2017 Equifax breach was possible because of a Java web framework vulnerability. The 2017 wannacry ransomware attack exploited some Microsoft Windows framework vulnerabilities. These flaws cost hundreds of millions of people their personal information. In the case of wannacry not patching these flaws, shut down entire hospitals for days on end, it's easy to tell people to patch their software. But how do you do it answering this succinctly and for all companies and possible edge cases is impossible. However, strategies do exist for patching and updating applications and services over the lifetime of their deployment. These strategies generally follow a process similar to the following. Keep an inventory of all the services and applications you have in deployment also keep an inventory of all their associated assets, libraries and software used next, you and your team should plan a way to standardize all of your production systems to be using the same libraries, versions and operating systems. Keep track of the various update channels after you have your applications documented and tracked next, define the security controls you have in place. Now you can determine priorities, cross reference your assets and security controls against the risk associated with not updating these systems. Once you have a prioritized list of patches and updates to make, define a weekly monthly and quarterly schedule to perform these updates. Now follow the plan and most importantly, follow the plan. This will allow you to keep your systems patched and your users safe. Keep in mind that the strategy we just discussed is not the only one and many others exist. If you would like to go more in depth on patching strategies, there are great resources at the popular SANS information security site as well as A P. We will add links to these in the teacher's notes.

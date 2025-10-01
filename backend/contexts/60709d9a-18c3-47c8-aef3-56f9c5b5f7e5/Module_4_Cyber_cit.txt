@@ -1,0 +1,372 @@
+Context VIDEO TRANSCRIPT:
+
+Module one then, looking at
+the concepts and the different models. I would say it's really important to have
+a firm understanding of this first module. It's really important. And I'll stress some topics as
+we move through the module for you to investigate further if you need to,
+or to come back and revisit if you're not completely
+comfortable with them. So what we'll do first is,
+look at what networking is, what are we talking about with networking? We'll look at the accepted network models. We will then move forward to look at
+one of those models, the OSI Model, which is a seven layered
+model in more depth. And so during this module, we will look at
+layer one, two, three, four, five, six, and seven. So networking, what are we talking about? Well, this is when we exchange
+data between two or more systems. And initially when computers were
+first created, they stored data, and there was a need to move data
+between one system and another. It was desirable to share. So when we're talking two or more systems,
+we can talk about a local area network, computers talking within one geographical
+area, one premises, one physical building, or connecting those networks
+together into a wide area network. And the internet itself, is a connection
+of those wide area networks. All those different networks and
+systems connected together globally. When networks are transmitting data,
+the data that's transmitted has to be formatted in a way that computers
+can understand it firstly, but also that it can be transmitted. And the way we transmit data
+is in a binary number system, a base two number system. It's called the base two number system,
+because it only has two different numbers. We have zero one and one. Our decimal system has 10
+different numbers 0123456789, before we advance onto the next digit 10,
+11, 12. And then another 10 before we
+move on to 20,30 and so on. So binary counting looks really unusual. If you've never seen it before,
+it would start zero zero. We then move on to zero one, but we
+can't go any higher than the number one. So the very next number,
+would be to increment into what would be the equivalent of 10,
+which is one zero. We would then have one one, and then we
+have run out of digits, we would need a third binary digit to move any further
+forward in the binary numbering system. If we're sending, if we're transmitting
+data using binary has an advantage. What we're trying to send is nothing,
+or something, zero or the one. And so to transmit, we need something that
+will support that system of zero and one. So we've got three main
+methods of transmission. We've got traditional cabling, and
+this uses electrical impulses. So something like copper, and when
+a one is being represented on the wire, it will be transmitted as
+a an electrical impulse. Zero would be represented
+as no electrical impulse. We then have wireless a radio wave,
+and again, an electromagnetic impulse of some kind
+of radio wave would indicator one. The absence of that radio
+wave would represent a zero. And then fiber connectivity using light,
+or photons, to send a message here light or photons
+would represent a one and darkness a zero. So a really simple way
+of transmitting data. And when we first started transmitting
+data, the speeds were incredibly slow, and we got faster and
+faster at sending these zeros and ones. So when we talked about local area
+networks were connecting limited devices in the same building, or
+within certainly close geography. Usually, this is to connect server and
+clients. And this was the dominant method
+of connecting systems together. In the 1980s we were trying to connect
+computers together within a geographical location, something like an office
+building, or a university maybe. Gradually, though what we found was a need
+to exchange data more widely than this. And here,
+we're talking about wide area networking, connecting together perhaps different
+universities, a customer and a supplier. And some of these links in the 1980s,
+1990s, were dedicated links. If you were ordering
+goods from a supplier, you may have a dedicated
+link to that supplier. Now, what we have is something much more
+flexible, an existing connection that everybody connects into this internet,
+this network of networks. So in our homes we connect to a network,
+which is our local area network that we connect on wards to the Internet through
+a device called a router, or a router, depending on your preferred pronunciation. We have the idea of a cloud and
+this is more abstract. The simple way to think of
+cloud based services is that, they are somebody else's computer. Using cloud services,
+you're using somebody else's resources, somebody else's server. Instead of being on premise in your
+location, now it's somewhere else. But we'll look more closely at
+cloud later in this chapter, because there are standards we can look
+at and different definitions that we need to be familiar with,
+before we close the chapter out.
+
+I mentioned two
+theoretical models, and you can see them here
+represented in blue. It looks really complicated, but we will break this down
+into manageable chunks. There are two broad models
+that we see in use. On the right-hand side, we see the TCP IP model. This is a really old
+longstanding model that separates networking
+out into four layers. My advice here is to keep
+an awareness of this model. This isn't a model that we use
+professionally day to day. But it's important
+because as you can see on the TCP IP protocol suite, a lot of those protocols we
+still have in use day to day. We still have
+commonly referenced. Things like mail
+or file transfer, are things that we
+would still use today. We have some protocols listed, there TCP and UDP that we will talk about a little bit
+later in the chapter, and some underlying
+topologies as well. The TCP IP Model separates our networking out into the
+network interface layer, the Internet layer,
+the transport layer, and the application layer. The OSI model by comparison
+has seven layers, and we'll start with
+the physical layer. This is the actual medium. We're connecting to, we're sending our data
+across the data link layer, Layer 2 deals with getting
+our data onto the network. The network layer routing, transporting our data
+across those networks. The transport layer
+forming resilient or non-resilient connections with another endpoint. Session layer, Layer
+5 the session layer, forming logical sessions, setting them up, managing them, and then tearing them
+down at the end. The presentation layer is
+all about getting your data, looking right for the system. Presenting your
+data in a way that makes sense for the
+application layer and the presentation layer
+is all about encoding. Encoding is not the same
+thing as encryption. Encoding is formatting. We might want an image to
+be formatted as a JPEG. Interestingly, for
+us, in terms of security at the
+presentation layer, this is where we see most of
+the encryption occurring. After all, encryption is
+a form of presentation. We're presenting our
+data in a way that is non-readable or way
+that is readable. We're presenting
+this data so that as the data moves up to
+the application layer, it can be passed on
+to the application. Just a point of warning here, the application layer is
+not the application itself. Now as we go through the module, we will go through each of
+these seven layers in turn. Please don't panic now there's an awful lot to take
+in on this slide. But what I would say is by
+the end of the chapter, be familiar with this
+seven-layer model and be able to reference
+Layer 2, is the data link, Layer 5, know the layers, be able to correlate that
+number with what it does, its purpose and
+its name as well. Layer 5 is the session layer, Layer 6 is the presentation
+layer, and so on. What we see in the
+bottom diagram we will discuss on this slide. This is the OSI model. OSI stands for Open
+Systems Interconnect. It's an open model
+and it's supported, maintained as an international
+standard, an ISO. This is commonly referenced
+as the ISO model. It's a palindrome, reads the
+same backwards as forwards. Each of the seven layers then provides a specific function. The numbering starts at the
+bottom and moves upwards. There are different
+traffic types, addresses, and devices associated
+with Layers 2, 3, and 4, and I will stress those
+different traffic types, addresses, and devices as we cover each of
+those different layers. Now, I think there is a really good
+way to remember this. There are lots of
+different mnemonics that you can use to help
+remember this model. We have starting at the bottom, starting at Layer 1. Please do not tell
+salespeople anything. As a mnemonic and
+easy way to remember, please do not throw
+sausage pizza away. There are endless
+variations of these. You may know some already. But what I would suggest is find something
+that works for you in terms of helping you to
+remember these seven layers. Most networking
+engineers will be able to tell you one
+of those mnemonics. Because when you first
+approach this model, it's typically what you learn. What you see on the
+right-hand column in the diagram is a process
+of encapsulation. We can think of this as being
+similar to Russian dolls. Inside one doll,
+you find another. Right at the heart, you
+have the smallest doll. What we do is we take
+our application data and we add a header,
+a presentation there. At the session layer,
+at the transport layer, we encapsulate it at
+each layer to make the data sensible
+usable at that layer. This is where we encounter
+those different traffic types. This is why we have those
+different traffic types. At Layer 2, we have frames, at Layer 3, we have packets, and at Layer 4 we have segments. Now we'll cover that and as
+we move through each layer, we'll talk about the traffic
+that addresses the devices. Again, don't worry about
+remembering it all right now.
+
+When network problems come up, the most common issue
+you'll run into is the inability to establish
+a connection to something. It could be a server
+you can't reach at all or a website
+that isn't loading. Maybe you can only
+reach your resource on your land and can't connect
+to anything on the Internet. Whatever the problem is,
+being able to diagnose connectivity issues is an important part of
+network troubleshooting. By the end of this lesson,
+you'll be able to use a number of important
+troubleshooting tools to help resolve these issues. When a network error occurs, the device that detects
+it needs some way to communicate this to the source of the problematic traffic. It could be that a router
+doesn't know how to route to a destination or that a
+certain port isn't reachable. It could even be that the
+TTL of an IP datagram expired and no further router
+hops will be attempted. For all of these
+situations and more, ICMP or Internet control
+message protocol is used to communicate
+these issues. ICMP is mainly used by a
+router or remote host to communicate why a
+transmission has failed back to the origin
+of the transmission. The makeup of an ICMP
+packet is pretty simple. It has a header
+with a few fields and a data section that's used by a host to
+figure out which of their transmissions
+generated the error. The first field is
+the type field, eight bits long, which specifies what type of
+message is being delivered. Some examples are destination unreachable or time exceeded. Immediately after this
+is the code field, which indicates a
+more specific reason for the message
+than just the type. For example, of the
+destination unreachable type, there are individual
+codes for things like destination network
+unreachable and destination port unreachable. After this is a 16 bit checksum that works like every other checksum field we've
+covered so far. Next up is a 32 bit field with an uninspired
+name rest of header. You'd think they
+could come up with something a bit
+more interesting, but I can't really
+think of anything good. Who am I to judge? Anyway, this field is optionally used by some of
+the specific types and codes to send more data. After this is the data
+payload for an ICMP packet. The payload for an ICMP packet
+exists entirely so that the recipient of the
+message knows which of their transmissions caused
+the error being reported. It contains the
+entire IP header and the first eight bytes of the data payload section
+of the offending packet. ICMP wasn't really developed
+for humans to interact with. The point is so
+that these sorts of error messages can be delivered between network to
+computers automatically. But there's also a
+specific tool and two message types that are very useful to human operators. This tool is called ping. Some version of it exists on just about every
+operating system and has for a very long time. Ping is a super simple program, and the basics are the same, no matter which operating
+system you're using. Ping lets you send
+a special type of ICMP message called
+an echo request. An ICMP echo request, essentially just
+ask a destination, hey, are you there? If the destination is up and running and able to
+communicate on the network, it'll send back an ICMP
+echo reply message type. You can invoke the
+ping command from the command line of any
+modern operating system. In its most basic use, you just type Ping and a destination IP or a fully
+qualified domain name. Output of the ping
+command is very similar across each of the
+different operating systems. Every line of output will generally display
+the address sending the ICMP echo reply and how long it took for the
+round trip communications. It will also have the
+TTL remaining and how large the ICMP
+message is in bytes. Once the command ends, there will also be some
+statistics displayed, like percentage of packets
+transmitted and received, the average round trip time and a couple other
+things like that. On Linux and macOS, the ping command
+will run until it's interrupted by an end user
+sending an interrupt event. They do this by pressing the control key and the
+C key at the same time. On Windows, ping defaults to only sending
+four echo requests. In all environments, ping
+supports a number of command line flags
+that let you change its behavior like the number
+of echo requests to send, how large they should be, and how quickly they should be sent. Check out the documentation for your operating system to
+learn a little bit more.
+
+So, let's start with understanding
+the importance of physical security. It cannot be understated how
+important physical security is. Without physical security,
+you can have theft. So, for instance,
+if you don't have doors that lock, somebody will walk in and
+steal your stuff, they'll just do it. You can have damage, people can yank away at something
+that's connected at a cable and pull out of the wall, you have
+modifications, I'm going to walk in and start typing on something and
+modify information systems. A physical security breach can
+directly impact confidentiality. What does that mean? Like for instance if somebody breaks in or
+somehow steals, let's say a laptop,
+grabs this drive out of the laptop and reads it and reads the files on it. Or it's able to tap into a network
+physically by plugging into a device, they might be able to read files and
+mess up the integrity, availability and
+confidentiality of admin systems. So, it is the basis of any information security program for an organization. We want to restrict unauthorized
+physical access to what? To the infrastructure,
+to the office premises, to workstations and to employees. We don't want somebody walking off
+the street into the building and able to walk directly to an employee's
+cubicle and threaten them. We don't want that happening
+in this organization. I don't know if you've heard
+of the OSI 7 layer model, but this is actually a pretty
+important concept. We'll revisit this a little bit later,
+but layer 1 of the OSI is physical. Normally, with the physical layer, what we talk about is
+the physical interconnections. So for instance,
+if you think about your laptop, your laptop might have a port to
+plug directly into the network. If you go to the back of
+a data center computer, a server,
+it might have a host bus adapter with a physical fiber optic cable connection. If you go to a switch or
+a router in a communications closet, it might have an uplink port and
+that uplink port might have a physical fiber optic or
+copper connection to it, right? That's that physical layer
+where we take the ones and zeros that are [INAUDIBLE] across
+the network, across communications. And we turn them, we accumulate
+them until they become a frame and that's where we get to layer 2. But right now we're at the physical layer. Physical layer with stuff plugs in,
+think stuff plugs in. And you have the physical
+layer of the OSI.
+
+Context READINGS:
+
+Open Systems Interconnection (OSI) Model
+From Network Security by ISC2
+The OSI protocol was developed to establish a common communication structure or standard for all computer systems. The actual OSI protocol was never widely adopted, but the theory behind the protocol, the OSI model, was readily accepted. The OSI model serves as an abstract framework, or theoretical model, for how protocols should function in an ideal world on ideal hardware. Thus, the OSI model has become a common reference point against which all protocols can be compared and contrasted.
+
+The OSI model divides networking tasks into seven distinct layers. Each layer is responsible for performing specific tasks or operations with the ultimate goal of supporting data exchange (in other words, network communication) between two computers. The layers are always numbered from bottom to top. They are referred to by either their name or their layer number. For example, Layer 3 is also known as the Network Layer. The layers are ordered specifically to indicate how information flows through the various levels of communication. Each layer communicates directly with the layer above it as well as the layer below it, plus the peer layer on a communication partner system.
+
+Encapsulation is the addition of a header, and possibly a footer, to the data received by each layer from the layer above before it is handed off to the layer below. As the message is encapsulated at each layer, the previous layer’s header and payload combine to become the payload of the current layer. Encapsulation occurs as the data moves down through the OSI model layers from Application to Physical. The inverse action occurring as data moves up through the OSI model layers from Physical to Application is known as de-encapsulation. The encapsulation/de-encapsulation process is as follows:
+
+The Application Layer creates a message and passes it to the Presentation Layer.
+
+The Presentation Layer encapsulates the message by adding information to it. Information is usually added only at the beginning of the message (called a header); however, some layers also add material at the end of the message (called a footer).
+
+The process of passing the message down and adding layer-specific information continues until the message reaches the Physical Layer. 
+
+At the Physical Layer, the message is converted into electrical impulses that represent bits and is transmitted over the physical connection. 
+
+The receiving computer captures the bits from the physical connection and re-creates the message in the Physical Layer.
+
+The Physical Layer converts the message from bits into a Data Link frame and sends the message up to the Data Link Layer. 
+
+The Data Link Layer strips its information and sends the message up to the Network Layer. 
+
+This process of de-encapsulation is performed until the message reaches the Application Layer. 
+
+When the message reaches the Application Layer, the data in the message is sent to the intended software recipient. 
+
+
+Transmission Control Protocol/Internet Protocol (TCP/IP)
+From Network Security by ISC2
+The OSI model wasn’t the first or only attempt to streamline networking protocols or establish a common communications standard. In fact, the most widely used protocol today, TCP/IP, was developed in the early 1970s. The OSI model was not developed until the late 1970s. The TCP/IP protocol stack focuses on the core functions of networking.  
+
+Application Layer
+
+Defines the protocols for the transport layer.  
+
+Transport Layer
+
+Permits data to move among devices.
+
+Internet Layer
+
+Creates/inserts packets.
+
+Network Interface Layer
+
+How data moves through the network. 
+
+The most widely used protocol suite is TCP/IP, but it is not just a single protocol; rather, it is a protocol stack comprising dozens of individual protocols. TCP/IP is a platform-independent protocol based on open standards. However, this is both a benefit and a drawback. TCP/IP can be found in just about every available operating system, but it consumes a significant amount of resources and is relatively easy to hack into because it was designed for ease of use rather than for security.
+
+At the Application Layer, TCP/IP protocols include Telnet, File Transfer Protocol (FTP), Simple Mail Transport Protocol (SMTP), and Domain Name Service (DNS).
+
+The two primary Transport Layer protocols of TCP/IP are TCP and UDP. TCP is a full-duplex connection-oriented protocol, whereas UDP is a simplex connectionless protocol. In the Interet Layer, Internet Control Message Protocol (ICMP) is used to determine the health of a network or a specific link. ICMP is utilized by ping, traceroute and other network management tools. The ping utility employs ICMP echo packets and bounces them off remote systems. Thus, you can use ping to determine whether the remote system is online, whether the remote system is responding promptly, whether the intermediary systems are supporting communications, and the level of performance efficiency at which the intermediary systems are communicating.
+
+
+
+IP is currently deployed and used worldwide in two major versions. IPv4 provides a 32-bit address space, which by the late 1980s was projected to be exhausted. IPv6 was introduced in December 1995 and provides a 128-bit address space along with several other important features. 
+
+image of IP address
+IP hosts/devices associate an address with a unique logical address. An IPv4 address is expressed as four octets separated by a dot (.), for example, 216.12.146.140. Each octet may have a value between 0 and 255. However, 0 is the network itself (not a device on that network), and 255 is generally reserved for broadcast purposes. Each address is subdivided into two parts: the network number and the host. The network number assigned by an external organization, such as the Internet Corporation for Assigned Names and Numbers (ICANN), represents the organization’s network. The host represents the network interface within the network.  
+
+To ease network administration, networks are typically divided into subnets. Because subnets cannot be distinguished with the addressing scheme discussed so far, a separate mechanism, the subnet mask, is used to define the part of the address used for the subnet. The mask is usually converted to decimal notation like 255.255.255.0.  
+
+With the ever-increasing number of computers and networked devices, it is clear that IPv4 does not provide enough addresses for our needs. To overcome this shortcoming, IPv4 was sub-divided into public and private address ranges. Public addresses are limited with IPv4, but this issue was addressed in part with private addressing. Private addresses can be shared by anyone, and it is highly likely that everyone on your street is using the same address scheme.  
+
+The nature of the addressing scheme established by IPv4 meant that network designers had to start thinking in terms of IP address reuse. IPv4 facilitated this in several ways, such as its creation of the private address groups; this allows every LAN in every SOHO (small office, home office) situation to use addresses such as 192.168.2.xxx for its internal network addresses, without fear that some other system can intercept traffic on their LAN. 
+
+This table shows the private addresses available for anyone to use:
+
+                                                                                          Range
+
+                                                                       10.0.0.0 to 10.255.255.254 
+
+                                                                    172.16.0.0 to 172.31.255.254 
+
+                                                                  192.168.0.0 to 192.168.255.254
+
+The first octet of 127 is reserved for a computer’s loopback address. Usually, the address 127.0.0.1 is used. The loopback address is used to provide a mechanism for self-diagnosis and troubleshooting at the machine level. This mechanism allows a network administrator to treat a local machine as if it were a remote machine and ping the network interface to establish whether it is operational. 
+
+IPv6 is a modernization of IPv4, which addressed a number of weaknesses in the IPv4 environment:
+
+A much larger address field: IPv6 addresses are 128 bits, which supports 2^128 or 340,282,366,920,938,463,463,374,607,431,768,211,456 hosts. This ensures that we will not run out of addresses.
+
+   Improved security: IPsec is an optional part of IPv4 networks, but a mandatory component of IPv6 networks. This will help ensure the integrity and confidentiality of IP packets and allow communicating partners to authenticate with each other.
+
+Improved quality of service (QoS): This will help services obtain an appropriate share of a network’s bandwidth.
+
+An IPv6 address is shown as 8 groups of four digits. Instead of numeric (0-9) digits like IPv4, IPv6 addresses use the hexadecimal range (0000-ffff) and are separated by colons (:) rather than periods (.). An example IPv6 address is 2001:0db8:0000:0000:0000:ffff:0000:0001. To make it easier for humans to read and type, it can be shortened by removing the leading zeros at the beginning of each field and substituting two colons (::) for the longest consecutive zero fields. All fields must retain at least one digit. After shortening, the example address above is rendered as 2001:db8::ffff:0:1, which is much easier to type. As in IPv4, there are some addresses and ranges that are reserved for special uses:
+
+::1 is the local loopback address, used the same as 127.0.0.1 in IPv4.
+
+The range 2001:db8:: to 2001:db8:ffff:ffff:ffff:ffff:ffff:ffff is reserved for documentation use, just like in the examples above.
+
+fc00:: to fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff are addresses reserved for internal network use and are not routable on the internet.
